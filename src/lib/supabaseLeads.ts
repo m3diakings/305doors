@@ -4,7 +4,9 @@ import { type LeadPayload, splitLeadContactFields } from '@/lib/lead'
 import { BUSINESS_NAME } from '@/lib/site'
 
 function supabaseUrl(): string | undefined {
-  return process.env.SUPABASE_URL?.trim() || process.env.NEXT_PUBLIC_SUPABASE_URL?.trim()
+  return (
+    process.env.NEXT_PUBLIC_SUPABASE_URL?.trim() || process.env.SUPABASE_URL?.trim()
+  )
 }
 
 export function isSupabaseLeadsConfigured(): boolean {
