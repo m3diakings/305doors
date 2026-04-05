@@ -2,10 +2,18 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import type { LocalizedSiteSections } from '@/lib/locationPages'
 import backgroundImage from '@/images/background-call-to-action.jpg'
 import { PHONE_DISPLAY, PHONE_TEL } from '@/lib/site'
 
-export function CallToActionBand() {
+type CallToActionBandProps = {
+  locale?: LocalizedSiteSections
+}
+
+export function CallToActionBand({ locale }: CallToActionBandProps) {
+  const line1 = locale?.ctaLine1 ?? 'Brand new doors.'
+  const line2 = locale?.ctaLine2 ?? 'Straightforward pricing.'
+
   return (
     <section
       className="relative overflow-hidden bg-blue-600 py-24 sm:py-32"
@@ -26,14 +34,33 @@ export function CallToActionBand() {
             id="cta-pricing-heading"
             className="font-display text-3xl tracking-tight text-white sm:text-4xl"
           >
-            Brand new doors.<br/> Straightforward pricing.
+            {line1}
+            <br /> {line2}
           </h2>
           <p className="mt-4 text-lg tracking-tight text-blue-100">
-            Get a free estimate for installation or repair. Call{' '}
-            <a href={`tel:${PHONE_TEL}`} className="font-semibold text-white underline-offset-2 hover:underline">
-              {PHONE_DISPLAY}
-            </a>{' '}
-            or send us your project details — we respond fast.
+            {locale ? (
+              <>
+                {locale.ctaBody}{' '}
+                <a
+                  href={`tel:${PHONE_TEL}`}
+                  className="font-semibold text-white underline-offset-2 hover:underline"
+                >
+                  {PHONE_DISPLAY}
+                </a>{' '}
+                — we respond fast.
+              </>
+            ) : (
+              <>
+                Get a free estimate for installation or repair. Call{' '}
+                <a
+                  href={`tel:${PHONE_TEL}`}
+                  className="font-semibold text-white underline-offset-2 hover:underline"
+                >
+                  {PHONE_DISPLAY}
+                </a>{' '}
+                or send us your project details — we respond fast.
+              </>
+            )}
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Button href="#contact" color="white">

@@ -3,6 +3,7 @@
 import { useId } from 'react'
 
 import { Container } from '@/components/Container'
+import type { LocalizedSiteSections } from '@/lib/locationPages'
 
 interface Feature {
   name: string
@@ -11,7 +12,7 @@ interface Feature {
   icon: React.ComponentType
 }
 
-const features: Array<Feature> = [
+const defaultFeatures: Array<Feature> = [
   {
     name: 'Storm-ready',
     summary: 'Hurricane-rated doors and hardware that meet Florida demands.',
@@ -115,22 +116,36 @@ function Feature({
   )
 }
 
-export function SecondaryServices() {
+type SecondaryServicesProps = {
+  locale?: LocalizedSiteSections
+}
+
+export function SecondaryServices({ locale }: SecondaryServicesProps) {
+  const features: Array<Feature> = locale
+    ? locale.secondaryFeatures.map((sf, i) => ({
+        ...sf,
+        icon: defaultFeatures[i]!.icon,
+      }))
+    : defaultFeatures
+
+  const heading =
+    locale?.secondaryHeading ?? 'Built for Florida homes & businesses.'
+  const subheading =
+    locale?.secondarySubheading ??
+    'From storm season prep to daily dependability, we focus on safety, speed, and workmanship you can feel confident recommending.'
+
   return (
     <section
       id="why-us"
-      aria-label="Why choose 305 Doors"
+      aria-label={locale ? `Why choose 305 Doors — ${locale.focusLabel}` : 'Why choose 305 Doors'}
       className="pt-20 pb-14 sm:pt-32 sm:pb-20 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Built for Florida homes &amp; businesses.
+            {heading}
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            From storm season prep to daily dependability, we focus on safety,
-            speed, and workmanship you can feel confident recommending.
-          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700">{subheading}</p>
         </div>
         <div className="mt-16 grid grid-cols-1 gap-12 sm:mt-20 sm:gap-16 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
           {features.map((feature) => (

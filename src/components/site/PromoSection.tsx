@@ -2,8 +2,22 @@ import Image from 'next/image'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import type { LocalizedSiteSections } from '@/lib/locationPages'
 
-export function PromoSection() {
+type PromoSectionProps = {
+  locale?: LocalizedSiteSections
+}
+
+export function PromoSection({ locale }: PromoSectionProps) {
+  const body =
+    locale?.promoBody ??
+    'Protect your property with rated doors, professional installation, and inventory ready when lead times matter most.'
+  const bullet1 = locale?.promoBullet1 ?? 'Fast lead times on in-stock doors'
+  const bullet2 = locale?.promoBullet2 ?? 'Expert installation included'
+  const imageAlt =
+    locale?.promoImageAlt ??
+    'Hurricane season garage door specials — impact-rated doors and professional installation by 305 Doors Corp, South Florida'
+
   return (
     <section
       className="border-y border-slate-200 bg-slate-50 py-20 sm:py-28"
@@ -33,18 +47,20 @@ export function PromoSection() {
               </span>{' '}
               specials
             </h2>
-            <p className="mt-6 text-lg tracking-tight text-slate-700">
-              Protect your property with rated doors, professional installation,
-              and inventory ready when lead times matter most.
-            </p>
+            {locale ? (
+              <p className="mt-3 font-display text-xl font-medium tracking-tight text-slate-800 sm:text-2xl">
+                {locale.promoLocationLine}
+              </p>
+            ) : null}
+            <p className="mt-6 text-lg tracking-tight text-slate-700">{body}</p>
             <ul className="mt-8 space-y-3 text-slate-600">
               <li className="flex gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600" />
-                Fast lead times on in-stock doors
+                {bullet1}
               </li>
               <li className="flex gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-blue-600" />
-                Expert installation included
+                {bullet2}
               </li>
             </ul>
             <Button href="#contact" color="blue" className="mt-10">
@@ -55,7 +71,7 @@ export function PromoSection() {
             <div className="overflow-hidden rounded-4xl bg-white shadow-xl shadow-slate-900/10 ring-1 ring-slate-900/5">
               <Image
                 src="/images/305doors/sale-hurricane.png"
-                alt="Hurricane season garage door specials — impact-rated doors and professional installation by 305 Doors Corp, South Florida"
+                alt={imageAlt}
                 width={600}
                 height={800}
                 className="w-full"

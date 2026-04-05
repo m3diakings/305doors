@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  /** Match legacy WordPress URLs (trailing slash) from page-sitemap.xml */
+  trailingSlash: true,
   async redirects() {
     return [
       {

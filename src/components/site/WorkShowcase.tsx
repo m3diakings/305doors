@@ -5,8 +5,9 @@ import Image from 'next/image'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import type { LocalizedSiteSections } from '@/lib/locationPages'
 
-const slides = [
+const defaultSlides = [
   {
     src: '/images/305doors/services/installation-louver.jpg',
     title: 'Residential upgrade',
@@ -51,6 +52,17 @@ const slides = [
   },
 ] as const
 
+type WorkSlide = {
+  src: string
+  title: string
+  caption: string
+  imageAlt: string
+}
+
+type WorkShowcaseProps = {
+  locale?: LocalizedSiteSections
+}
+
 const DESKTOP_COLUMNS = 3
 const LG_QUERY = '(min-width: 1024px)'
 
@@ -82,11 +94,7 @@ function ChevronRight(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function ProjectCard({
-  project,
-}: {
-  project: (typeof slides)[number]
-}) {
+function ProjectCard({ project }: { project: WorkSlide }) {
   return (
     <figure className="relative flex h-full w-full flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-slate-900/5">
       <div className="relative aspect-4/3 w-full shrink-0">
@@ -116,7 +124,13 @@ function readScrollStep(scroller: HTMLDivElement): number {
   return first.offsetWidth + g
 }
 
-export function WorkShowcase() {
+export function WorkShowcase({ locale }: WorkShowcaseProps) {
+  const slides = locale?.workSlides ?? defaultSlides
+  const workTitle = locale?.workTitle ?? 'Recent work across South Florida.'
+  const workSubtitle =
+    locale?.workSubtitle ??
+    'A snapshot of installs and repairs we have completed for neighbors throughout Miami-Dade, Broward, and nearby counties.'
+
   const scrollerRef = useRef<HTMLDivElement>(null)
   const scrollSettleRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const [start, setStart] = useState(0)
@@ -136,7 +150,7 @@ export function WorkShowcase() {
 
   useEffect(() => {
     setStart((s) => Math.min(s, maxStart))
-  }, [maxStart])
+  }, [maxStart, count])
 
   const scrollToIndex = useCallback(
     (rawIndex: number, behavior: ScrollBehavior = 'smooth') => {
@@ -180,7 +194,7 @@ export function WorkShowcase() {
       })
     })
     return () => cancelAnimationFrame(raf)
-  }, [count, isLg, maxStartDesktop])
+  }, [count, isLg, maxStartDesktop, slides])
 
   useEffect(() => {
     const el = scrollerRef.current
@@ -225,18 +239,17 @@ export function WorkShowcase() {
   return (
     <section
       id="work"
-      aria-label="Recent garage door projects"
+      aria-label={
+        locale ? `Recent garage door projects — ${locale.focusLabel}` : 'Recent garage door projects'
+      }
       className="bg-slate-50 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center lg:max-w-3xl">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Recent work across South Florida.
+            {workTitle}
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            A snapshot of installs and repairs we have completed for neighbors
-            throughout Miami-Dade, Broward, and nearby counties.
-          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700">{workSubtitle}</p>
         </div>
 
         <div
@@ -254,9 +267,9 @@ export function WorkShowcase() {
               className="flex snap-x snap-mandatory gap-6 overflow-x-auto overflow-y-hidden scroll-smooth pb-2 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 [&::-webkit-scrollbar]:hidden"
               aria-label="Scroll horizontally to browse projects"
             >
-              {slides.map((project) => (
+              {slides.map((project, index) => (
                 <div
-                  key={project.src}
+                  key={`${project.src}-${project.title}-${index}`}
                   className="w-full shrink-0 snap-start lg:w-[calc((100%-3rem)/3)] lg:min-w-0"
                 >
                   <ProjectCard project={project} />

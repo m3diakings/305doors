@@ -6,9 +6,10 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import type { LocalizedSiteSections } from '@/lib/locationPages'
 import backgroundImage from '@/images/background-features.jpg'
 
-const features = [
+const defaultFeatures = [
   {
     title: 'Installation & replacement',
     description:
@@ -43,7 +44,17 @@ const features = [
   },
 ] as const
 
-export function PrimaryServices() {
+type PrimaryServicesProps = {
+  locale?: LocalizedSiteSections
+}
+
+export function PrimaryServices({ locale }: PrimaryServicesProps) {
+  const features = locale?.primaryTabs ?? defaultFeatures
+  const heading = locale?.primaryHeading ?? 'Everything your property needs.'
+  const subheading =
+    locale?.primarySubheading ??
+    'One team for install, repair, commercial roll-ups, and openers — with honest recommendations and workmanship you can trust.'
+
   const [tabOrientation, setTabOrientation] = useState<'horizontal' | 'vertical'>(
     'horizontal',
   )
@@ -66,7 +77,9 @@ export function PrimaryServices() {
   return (
     <section
       id="services"
-      aria-label="Garage door services"
+      aria-label={
+        locale ? `Garage door services — ${locale.focusLabel}` : 'Garage door services'
+      }
       className="relative overflow-hidden bg-blue-600 pt-20 pb-28 sm:py-32"
     >
       <Image
@@ -81,12 +94,9 @@ export function PrimaryServices() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything your property needs.
+            {heading}
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
-            One team for install, repair, commercial roll-ups, and openers — with
-            honest recommendations and workmanship you can trust.
-          </p>
+          <p className="mt-6 text-lg tracking-tight text-blue-100">{subheading}</p>
         </div>
         <TabGroup
           className="mt-16 grid grid-cols-1 items-center gap-y-2 pt-10 sm:gap-y-6 md:mt-20 lg:grid-cols-12 lg:pt-0"
