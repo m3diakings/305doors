@@ -57,8 +57,8 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: '/favicon-192.png',
-    apple: '/favicon-192.png',
+    icon: [{ url: '/favicon-192.png', type: 'image/png', sizes: '192x192' }],
+    apple: [{ url: '/favicon-192.png', sizes: '192x192' }],
   },
   category: 'home services',
 }
