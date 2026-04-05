@@ -1,6 +1,13 @@
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.305doors.com'
 
+/** Canonical origin without trailing slash (sitemap, JSON-LD, robots). */
+export const SITE_ORIGIN = SITE_URL.replace(/\/$/, '')
+
+/** Optional: set in `.env.local` as `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=...` */
+export const GOOGLE_SITE_VERIFICATION =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? ''
+
 export const BUSINESS_NAME = '305 Doors Corp'
 export const BUSINESS_SHORT = '305 Doors'
 

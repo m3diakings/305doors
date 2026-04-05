@@ -6,10 +6,11 @@ import {
   BUSINESS_NAME,
   DEFAULT_DESCRIPTION,
   FACEBOOK_URL,
+  GOOGLE_SITE_VERIFICATION,
   INSTAGRAM_URL,
   PHONE_TEL,
   SERVICE_AREAS,
-  SITE_URL,
+  SITE_ORIGIN,
 } from '@/lib/site'
 
 import '@/styles/tailwind.css'
@@ -17,12 +18,15 @@ import '@/styles/tailwind.css'
 const pageTitle = `Garage Door Installation & Repair Miami | ${BUSINESS_NAME}`
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(SITE_ORIGIN),
   title: {
     default: pageTitle,
     template: `%s | ${BUSINESS_NAME}`,
   },
   description: DEFAULT_DESCRIPTION,
+  ...(GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: GOOGLE_SITE_VERIFICATION } }
+    : {}),
   keywords: [
     'garage door repair Miami',
     'garage door installation Miami',
@@ -44,8 +48,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/images/305doors/hero-1.jpg',
-        width: 1200,
-        height: 630,
+        width: 700,
+        height: 500,
         alt: 'Garage door installation by 305 Doors Corp',
       },
     ],
@@ -54,6 +58,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: pageTitle,
     description: DEFAULT_DESCRIPTION,
+    images: [`${SITE_ORIGIN}/images/305doors/hero-1.jpg`],
   },
   robots: { index: true, follow: true },
   icons: {
@@ -67,11 +72,21 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'LocalBusiness',
-      '@id': `${SITE_URL.replace(/\/$/, '')}/#business`,
+      '@type': 'WebSite',
+      '@id': `${SITE_ORIGIN}/#website`,
+      url: `${SITE_ORIGIN}/`,
       name: BUSINESS_NAME,
-      image: `${SITE_URL.replace(/\/$/, '')}/images/305doors/logo.png`,
-      url: SITE_URL.replace(/\/$/, ''),
+      description: DEFAULT_DESCRIPTION,
+      inLanguage: 'en-US',
+      publisher: { '@id': `${SITE_ORIGIN}/#business` },
+    },
+    {
+      '@type': 'LocalBusiness',
+      '@id': `${SITE_ORIGIN}/#business`,
+      name: BUSINESS_NAME,
+      url: `${SITE_ORIGIN}/`,
+      image: `${SITE_ORIGIN}/images/305doors/logo.png`,
+      logo: `${SITE_ORIGIN}/images/305doors/logo.png`,
       telephone: PHONE_TEL,
       priceRange: '$$',
       description: DEFAULT_DESCRIPTION,

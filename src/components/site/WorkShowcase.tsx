@@ -11,31 +11,43 @@ const slides = [
     src: '/images/305doors/services/installation-louver.jpg',
     title: 'Residential upgrade',
     caption: 'Full replacement with insulated panel door and new hardware.',
+    imageAlt:
+      'Residential garage door upgrade with insulated panel door and new hardware installed by 305 Doors in South Florida.',
   },
   {
     src: '/images/305doors/gallery/work-02.jpeg',
     title: 'Commercial bay',
     caption: 'Heavy-duty installation tuned for daily commercial cycles.',
+    imageAlt:
+      'Commercial garage door bay installation for high-traffic daily use, 305 Doors South Florida.',
   },
   {
     src: '/images/305doors/gallery/work-03.jpeg',
     title: 'Curb appeal',
     caption: 'Modern finish and clean lines to match the home exterior.',
+    imageAlt:
+      'Modern residential garage door improving curb appeal and matching home exterior, 305 Doors.',
   },
   {
     src: '/images/305doors/gallery/work-04.jpg',
     title: 'Repair & tune-up',
     caption: 'Safety inspection, balance, and operator alignment.',
+    imageAlt:
+      'Garage door repair and tune-up including safety inspection and operator alignment by 305 Doors.',
   },
   {
     src: '/images/305doors/gallery/work-05.jpeg',
     title: 'Opener upgrade',
     caption: 'Quiet drive system with smart access options.',
+    imageAlt:
+      'Garage door opener upgrade with quiet drive and smart access options installed by 305 Doors.',
   },
   {
     src: '/images/305doors/gallery/work-06.jpeg',
     title: 'South Florida install',
     caption: 'Local crew, same attention to detail on every job.',
+    imageAlt:
+      'Garage door installation project completed by 305 Doors crew in South Florida.',
   },
 ] as const
 
@@ -80,7 +92,7 @@ function ProjectCard({
       <div className="relative aspect-4/3 w-full shrink-0">
         <Image
           src={project.src}
-          alt=""
+          alt={project.imageAlt}
           fill
           className="object-cover"
           sizes="(min-width: 1024px) 33vw, 100vw"

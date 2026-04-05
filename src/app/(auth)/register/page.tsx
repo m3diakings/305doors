@@ -8,6 +8,11 @@ import { SlimLayout } from '@/components/SlimLayout'
 
 export const metadata: Metadata = {
   title: 'Sign Up',
+  robots: { index: false, follow: true },
+  openGraph: {
+    title: 'Sign Up',
+    description: 'Create an account with 305 Doors Corp.',
+  },
 }
 
 export default function Register() {

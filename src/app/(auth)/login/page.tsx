@@ -8,6 +8,11 @@ import { SlimLayout } from '@/components/SlimLayout'
 
 export const metadata: Metadata = {
   title: 'Sign in',
+  robots: { index: false, follow: true },
+  openGraph: {
+    title: 'Sign in',
+    description: 'Account sign-in for 305 Doors Corp.',
+  },
 }
 
 export default function Login() {

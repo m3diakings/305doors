@@ -47,6 +47,10 @@ export function QuoteForm({ className }: QuoteFormProps) {
       className={clsx('space-y-6 text-left', className)}
       noValidate
     >
+      <p className="sr-only">
+        Free quote form for garage door installation, repair, or commercial doors
+        in Miami-Dade, Broward, Palm Beach, and surrounding South Florida counties.
+      </p>
       <TextField
         name="name"
         type="text"

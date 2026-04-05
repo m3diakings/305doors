@@ -39,7 +39,7 @@ export function HeroSection() {
         <div className="relative min-h-160 overflow-hidden rounded-4xl bg-slate-900 ring-1 ring-slate-900/10 sm:min-h-192 lg:aspect-21/9 lg:min-h-0">
           <Image
             src="/images/305doors/gallery/latest-work/latest-work-07.jpeg"
-            alt="Garage door installation by 305 Doors"
+            alt="Professional garage door installation on a South Florida home — residential service by 305 Doors Corp"
             fill
             className="object-cover object-center"
             sizes="(min-width: 1024px) 80rem, 100vw"

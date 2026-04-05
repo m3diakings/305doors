@@ -55,7 +55,7 @@ export function PromoSection() {
             <div className="overflow-hidden rounded-4xl bg-white shadow-xl shadow-slate-900/10 ring-1 ring-slate-900/5">
               <Image
                 src="/images/305doors/sale-hurricane.png"
-                alt="Hurricane-rated garage door promotion"
+                alt="Hurricane season garage door specials — impact-rated doors and professional installation by 305 Doors Corp, South Florida"
                 width={600}
                 height={800}
                 className="w-full"

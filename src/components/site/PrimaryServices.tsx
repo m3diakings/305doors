@@ -14,24 +14,32 @@ const features = [
     description:
       'Upgrade with durable, stylish doors — including hurricane-rated models built for Florida weather and code.',
     image: '/images/305doors/gallery/latest-work/latest-work-01.jpeg',
+    imageAlt:
+      'Garage door installation and replacement including hurricane-rated models for Florida, 305 Doors Corp.',
   },
   {
     title: 'Repair & 24-hour response',
     description:
       'Broken spring, off-track door, or opener failure? We prioritize safety and fast turnaround across South Florida.',
     image: '/images/305doors/gallery/latest-work/latest-work-08.jpeg',
+    imageAlt:
+      'Emergency garage door repair and 24-hour response for springs, tracks, and openers in South Florida.',
   },
   {
     title: 'Roll-up doors & gates',
     description:
       'Commercial roll-ups, gates, and industrial solutions that keep your property secure and operations moving.',
     image: '/images/305doors/gallery/work-04.jpg',
+    imageAlt:
+      'Commercial roll-up garage doors and industrial door solutions installed by 305 Doors.',
   },
   {
     title: 'Openers & smart accessories',
     description:
       'Install and service leading opener brands, remotes, keypads, and smart features for convenience and security.',
     image: '/images/305doors/services/openers-accessories.jpg',
+    imageAlt:
+      'Garage door openers, remotes, keypads, and smart accessories installed and serviced by 305 Doors.',
   },
 ] as const
 
@@ -68,6 +76,7 @@ export function PrimaryServices() {
         width={2245}
         height={1636}
         unoptimized
+        aria-hidden
       />
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
@@ -136,7 +145,7 @@ export function PrimaryServices() {
                     <div className="relative mt-10 w-full overflow-hidden rounded-xl bg-slate-50 lg:hidden">
                       <Image
                         src={feature.image}
-                        alt=""
+                        alt={feature.imageAlt}
                         width={1200}
                         height={800}
                         className="h-auto w-full"
@@ -147,7 +156,7 @@ export function PrimaryServices() {
                     <div className="relative mt-10 hidden aspect-3/2 w-180 overflow-hidden rounded-xl bg-slate-50 sm:w-auto lg:mt-0 lg:block lg:w-271.25">
                       <Image
                         src={feature.image}
-                        alt=""
+                        alt={feature.imageAlt}
                         fill
                         className="object-cover"
                         priority

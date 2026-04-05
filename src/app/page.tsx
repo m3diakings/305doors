@@ -12,6 +12,12 @@ import { WorkShowcase } from '@/components/site/WorkShowcase'
 export default function Home() {
   return (
     <>
+      <a
+        href="#content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-blue-600 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white focus:outline-none"
+      >
+        Skip to main content
+      </a>
       <Header />
       <main id="content" className="flex-1 pb-24 sm:pb-0">
         <HeroSection />

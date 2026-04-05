@@ -7,7 +7,10 @@ import { PHONE_DISPLAY, PHONE_TEL } from '@/lib/site'
 
 export function CallToActionBand() {
   return (
-    <section className="relative overflow-hidden bg-blue-600 py-24 sm:py-32">
+    <section
+      className="relative overflow-hidden bg-blue-600 py-24 sm:py-32"
+      aria-labelledby="cta-pricing-heading"
+    >
       <Image
         className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
         src={backgroundImage}
@@ -15,10 +18,14 @@ export function CallToActionBand() {
         width={2347}
         height={1244}
         unoptimized
+        aria-hidden
       />
       <Container className="relative">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
+          <h2
+            id="cta-pricing-heading"
+            className="font-display text-3xl tracking-tight text-white sm:text-4xl"
+          >
             Brand new doors.<br/> Straightforward pricing.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-blue-100">

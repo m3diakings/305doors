@@ -1,8 +1,14 @@
+import { type Metadata } from 'next'
 import Link from 'next/link'
 
 import { Button } from '@/components/Button'
 import { Logo } from '@/components/Logo'
 import { SlimLayout } from '@/components/SlimLayout'
+
+export const metadata: Metadata = {
+  title: 'Page not found',
+  robots: { index: false, follow: true },
+}
 
 export default function NotFound() {
   return (
