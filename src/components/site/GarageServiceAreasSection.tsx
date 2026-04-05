@@ -107,11 +107,11 @@ export function GarageServiceAreasSection() {
             id={`service-area-panel-${selectedCounty.slug}`}
             role="tabpanel"
             aria-labelledby={`service-area-tab-${selectedCounty.slug}`}
-            className="mx-auto mt-10 max-w-3xl rounded-xl border border-slate-100 bg-slate-50/80 px-4 py-5 sm:px-6"
+            className="mx-auto mt-2 max-w-3xl rounded-xl  py-5 sm:px-6"
           >
-            <p className="text-center text-sm font-medium text-slate-700">
+            {/* <p className="text-center text-sm font-medium text-slate-700">
               Cities we serve in {selectedCounty.label}
-            </p>
+            </p> */}
             <p className="mt-4 text-center text-base leading-relaxed text-slate-600">
               {panelLinks.map((item, index) => (
                 <span key={item.key}>

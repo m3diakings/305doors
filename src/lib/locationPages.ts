@@ -519,9 +519,10 @@ const BASE_WORK_SLIDES = [
       'Full replacement with insulated panel door and new hardware — completed for neighbors across South Florida.',
   },
   {
-    src: '/images/305doors/gallery/work-02.jpeg',
-    title: 'Commercial bay',
-    caption: 'Heavy-duty installation tuned for daily commercial cycles and high-traffic docks.',
+    src: '/images/305doors/services/roll-up-doors.jpg',
+    title: 'Commercial roll-up',
+    caption:
+      'Steel roll-up and sectional doors for warehouses, retail bays, and high-traffic loading docks.',
   },
   {
     src: '/images/305doors/gallery/work-03.jpeg',
@@ -529,7 +530,7 @@ const BASE_WORK_SLIDES = [
     caption: 'Modern finish and clean lines chosen to match each home’s exterior palette.',
   },
   {
-    src: '/images/305doors/gallery/work-04.jpg',
+    src: '/images/305doors/gallery/latest-work/latest-work-16.jpeg',
     title: 'Repair & tune-up',
     caption: 'Safety inspection, balance, and operator alignment after wear from heat and daily use.',
   },

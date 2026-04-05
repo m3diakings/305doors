@@ -27,6 +27,7 @@ export function QuoteForm({ className }: QuoteFormProps) {
       contact: (form.elements.namedItem('contact') as HTMLInputElement).value,
       address: (form.elements.namedItem('address') as HTMLInputElement).value,
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem('website') as HTMLInputElement).value,
     }
     try {
       const res = await fetch('/api/lead', {
@@ -44,13 +45,23 @@ export function QuoteForm({ className }: QuoteFormProps) {
   return (
     <form
       onSubmit={onSubmit}
-      className={clsx('space-y-6 text-left', className)}
+      className={clsx('relative space-y-6 text-left', className)}
       noValidate
     >
       <p className="sr-only">
         Free quote form for garage door installation, repair, or commercial doors
         in Miami-Dade, Broward, Palm Beach, and surrounding South Florida counties.
       </p>
+      {/* Honeypot: must stay empty — bots often fill “website” */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        defaultValue=""
+        className="pointer-events-none absolute top-0 left-0 h-px w-px opacity-0"
+      />
       <TextField
         name="name"
         type="text"

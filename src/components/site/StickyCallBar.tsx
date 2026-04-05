@@ -18,7 +18,7 @@ export function StickyCallBar() {
           Quote
         </Button>
       </div>
-      <p className="mt-1.5 text-center text-xs text-slate-500">{PHONE_DISPLAY}</p>
+      {/* <p className="mt-1.5 text-center text-xs text-slate-500">{PHONE_DISPLAY}</p> */}
     </div>
   )
 }

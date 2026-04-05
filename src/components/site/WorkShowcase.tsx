@@ -16,11 +16,11 @@ const defaultSlides = [
       'Residential garage door upgrade with insulated panel door and new hardware installed by 305 Doors in South Florida.',
   },
   {
-    src: '/images/305doors/gallery/work-02.jpeg',
-    title: 'Commercial bay',
-    caption: 'Heavy-duty installation tuned for daily commercial cycles.',
+    src: '/images/305doors/services/roll-up-doors.jpg',
+    title: 'Commercial roll-up',
+    caption: 'Steel roll-up and sectional installs for warehouses, retail bays, and loading docks.',
     imageAlt:
-      'Commercial garage door bay installation for high-traffic daily use, 305 Doors South Florida.',
+      'Commercial steel roll-up garage doors installed for South Florida warehouses and retail bays — 305 Doors Corp.',
   },
   {
     src: '/images/305doors/gallery/work-03.jpeg',
@@ -30,11 +30,11 @@ const defaultSlides = [
       'Modern residential garage door improving curb appeal and matching home exterior, 305 Doors.',
   },
   {
-    src: '/images/305doors/gallery/work-04.jpg',
+    src: '/images/305doors/gallery/latest-work/latest-work-16.jpeg',
     title: 'Repair & tune-up',
     caption: 'Safety inspection, balance, and operator alignment.',
     imageAlt:
-      'Garage door repair and tune-up including safety inspection and operator alignment by 305 Doors.',
+      'Garage door repair and tune-up — safety inspection, balance, and hardware service on a South Florida home by 305 Doors.',
   },
   {
     src: '/images/305doors/gallery/work-05.jpeg',

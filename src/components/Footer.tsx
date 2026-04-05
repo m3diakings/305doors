@@ -6,10 +6,10 @@ import { NavLink } from '@/components/NavLink'
 import { BUSINESS_NAME, FACEBOOK_URL, INSTAGRAM_URL } from '@/lib/site'
 
 const footerNav = [
-  { href: '#services', label: 'Services' },
-  { href: '#work', label: 'Work' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#work', label: 'Work' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#contact', label: 'Contact' },
 ] as const
 
 export function Footer() {

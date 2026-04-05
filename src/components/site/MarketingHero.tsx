@@ -20,6 +20,8 @@ export type MarketingHeroProps = {
   imageAlt: string
   /** First paint: only one hero per page should use true */
   imagePriority?: boolean
+  /** Wider lead paragraph under the H1 (e.g. long service copy) */
+  wideSubtitle?: boolean
   /** Content under the hero image (e.g. service areas list) */
   belowImage?: ReactNode
 }
@@ -32,6 +34,7 @@ export function MarketingHero({
   imageSrc,
   imageAlt,
   imagePriority = false,
+  wideSubtitle = false,
   belowImage,
 }: MarketingHeroProps) {
   return (
@@ -58,7 +61,14 @@ export function MarketingHero({
           <span className="relative">{headingAccent}</span>
         </span>
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">{subtitle}</p>
+      <p
+        className={clsx(
+          'mx-auto mt-6 text-lg tracking-tight text-slate-700',
+          wideSubtitle ? 'max-w-4xl leading-relaxed' : 'max-w-2xl',
+        )}
+      >
+        {subtitle}
+      </p>
       <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-4">
         <Button href="#contact" color="blue">
           Get a free quote
