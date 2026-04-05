@@ -20,8 +20,12 @@ export function QuoteForm({ className }: QuoteFormProps) {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setStatus('sending')
     const form = e.currentTarget
+    if (!form.checkValidity()) {
+      form.reportValidity()
+      return
+    }
+    setStatus('sending')
     const data = {
       name: (form.elements.namedItem('name') as HTMLInputElement).value,
       contact: (form.elements.namedItem('contact') as HTMLInputElement).value,
@@ -46,7 +50,6 @@ export function QuoteForm({ className }: QuoteFormProps) {
     <form
       onSubmit={onSubmit}
       className={clsx('relative space-y-6 text-left', className)}
-      noValidate
     >
       <p className="sr-only">
         Free quote form for garage door installation, repair, or commercial doors

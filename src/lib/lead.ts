@@ -31,6 +31,40 @@ export function extractReplyToEmail(contact: string): string | undefined {
   return m?.[0]
 }
 
+/**
+ * Split the single form "contact" field into optional structured email / phone for storage.
+ * Keeps behavior best-effort: free text with neither pattern yields both null (raw contact still stored elsewhere).
+ */
+export function splitLeadContactFields(contact: string): {
+  email: string | null
+  phone: string | null
+} {
+  const t = contact.trim()
+  if (!t) return { email: null, phone: null }
+
+  const extracted = extractReplyToEmail(t)
+  const email = extracted ? extracted.toLowerCase() : null
+
+  const remainder = extracted
+    ? t.replace(extracted, ' ').replace(/\s+/g, ' ').trim()
+    : t
+
+  function phoneLike(s: string): boolean {
+    if (!s || s.includes('@')) return false
+    const digits = (s.match(/\d/g) || []).length
+    return digits >= 10 || (digits >= 7 && digits <= 15)
+  }
+
+  let phone: string | null = null
+  if (remainder && phoneLike(remainder)) {
+    phone = remainder
+  } else if (!email && phoneLike(t)) {
+    phone = t
+  }
+
+  return { email, phone }
+}
+
 export function formatLeadEmailText(payload: LeadPayload): string {
   return [
     `Name: ${payload.name}`,

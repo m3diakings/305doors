@@ -10,6 +10,8 @@ import {
   leadPayloadSchema,
 } from '@/lib/lead'
 import { BUSINESS_NAME, SITE_URL } from '@/lib/site'
+import { insertLeadInSupabase, isSupabaseLeadsConfigured } from '@/lib/supabaseLeads'
+import { createZohoCrmLead, isZohoCrmConfigured } from '@/lib/zohoCrm'
 
 export const runtime = 'nodejs'
 
@@ -120,12 +122,32 @@ export async function POST(request: Request) {
     }
   }
 
+  if (isZohoCrmConfigured()) {
+    try {
+      const zohoOk = await createZohoCrmLead(data)
+      channelResults.push(zohoOk)
+    } catch (e) {
+      console.error('[api/lead] Zoho CRM error:', e)
+      channelResults.push(false)
+    }
+  }
+
+  if (isSupabaseLeadsConfigured()) {
+    try {
+      const supabaseOk = await insertLeadInSupabase(data)
+      channelResults.push(supabaseOk)
+    } catch (e) {
+      console.error('[api/lead] Supabase error:', e)
+      channelResults.push(false)
+    }
+  }
+
   const configured = channelResults.length > 0
 
   if (!configured) {
     if (process.env.NODE_ENV === 'development') {
       console.warn(
-        '[api/lead] No LEAD_WEBHOOK_URL or Resend (RESEND_API_KEY + LEAD_EMAIL_TO + LEAD_EMAIL_FROM). Lead not delivered.',
+        '[api/lead] No delivery channel configured (Resend, LEAD_WEBHOOK_URL, Zoho CRM, or Supabase). Lead not sent anywhere.',
       )
     }
     return Response.json({ ok: true })
