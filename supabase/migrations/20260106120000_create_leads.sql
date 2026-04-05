@@ -13,7 +13,7 @@ create table if not exists public.leads (
 
 create index if not exists leads_created_at_idx on public.leads (created_at desc);
 
-comment on table public.leads is 'Website quote requests; written by server with SUPABASE_SECRET_KEY only.';
+comment on table public.leads is 'Website quote requests; written by server with SUPABASE_SERVICE_ROLE_KEY only.';
 
 alter table public.leads enable row level security;
 

@@ -10,12 +10,12 @@ function supabaseUrl(): string | undefined {
 }
 
 export function isSupabaseLeadsConfigured(): boolean {
-  return Boolean(supabaseUrl() && process.env.SUPABASE_SECRET_KEY?.trim())
+  return Boolean(supabaseUrl() && process.env.SUPABASE_SERVICE_ROLE_KEY?.trim())
 }
 
 function getServiceClient(): SupabaseClient | null {
   const url = supabaseUrl()
-  const key = process.env.SUPABASE_SECRET_KEY?.trim()
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim()
   if (!url || !key) return null
   return createClient(url, key, {
     auth: { persistSession: false, autoRefreshToken: false },
