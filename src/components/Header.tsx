@@ -25,9 +25,10 @@ import { SERVICE_NAV_LINKS } from '@/lib/servicePages'
 import { PHONE_DISPLAY, PHONE_TEL } from '@/lib/site'
 
 const secondaryNav = [
-  { href: '#work', label: 'Work' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#work', label: 'Work' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/blog/', label: 'Blog' },
+  { href: '/#contact', label: 'Contact' },
 ] as const
 
 function ChevronDownIcon({ className }: { className?: string }) {
@@ -208,7 +209,7 @@ export function Header() {
               >
                 {PHONE_DISPLAY}
               </a>
-              <Button href="#contact" color="blue">
+              <Button href="/#contact" color="blue">
                 <span>
                   Free quote <span className="hidden lg:inline">today</span>
                 </span>

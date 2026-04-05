@@ -9,6 +9,7 @@ const footerNav = [
   { href: '/#services', label: 'Services' },
   { href: '/#work', label: 'Work' },
   { href: '/#faq', label: 'FAQ' },
+  { href: '/blog/', label: 'Blog' },
   { href: '/#contact', label: 'Contact' },
 ] as const
 

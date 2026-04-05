@@ -70,7 +70,7 @@ export function MarketingHero({
         {subtitle}
       </p>
       <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-4">
-        <Button href="#contact" color="blue">
+        <Button href="/#contact" color="blue">
           Get a free quote
         </Button>
         <Button href={`tel:${PHONE_TEL}`} variant="outline">

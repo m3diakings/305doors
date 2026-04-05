@@ -63,7 +63,7 @@ export function CallToActionBand({ locale }: CallToActionBandProps) {
             )}
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Button href="#contact" color="white">
+            <Button href="/#contact" color="white">
               Get a free quote
             </Button>
             <Button

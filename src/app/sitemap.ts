@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 
+import { allBlogSlugs } from '@/lib/blog'
 import { ALL_LOCATION_SLUGS } from '@/lib/locationPages'
 import { allServiceSlugs } from '@/lib/servicePages'
 import { SITE_ORIGIN } from '@/lib/site'
@@ -13,6 +14,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
   ]
+
+  const blogIndex: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_ORIGIN}/blog/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.75,
+    },
+  ]
+
+  const blogPosts: MetadataRoute.Sitemap = allBlogSlugs().map((slug) => ({
+    url: `${SITE_ORIGIN}/blog/${slug}/`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.65,
+  }))
 
   const services: MetadataRoute.Sitemap = allServiceSlugs().map((slug) => ({
     url: `${SITE_ORIGIN}/services/${slug}/`,
@@ -28,5 +45,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...home, ...services, ...locations]
+  return [...home, ...blogIndex, ...blogPosts, ...services, ...locations]
 }

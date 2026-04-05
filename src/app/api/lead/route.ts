@@ -15,14 +15,36 @@ import { createZohoCrmLead, isZohoCrmConfigured } from '@/lib/zohoCrm'
 
 export const runtime = 'nodejs'
 
+function leadAllowedOrigins(): Set<string> {
+  const set = new Set<string>()
+  try {
+    set.add(new URL(SITE_URL).origin)
+  } catch {
+    /* invalid SITE_URL */
+  }
+  const vercelHost = process.env.VERCEL_URL?.trim()
+  if (vercelHost) {
+    set.add(`https://${vercelHost}`)
+  }
+  for (const raw of (process.env.LEAD_ALLOWED_ORIGINS ?? '').split(',')) {
+    const s = raw.trim()
+    if (!s) continue
+    try {
+      set.add(new URL(s).origin)
+    } catch {
+      /* skip bad entry */
+    }
+  }
+  return set
+}
+
 function isAllowedOrigin(request: Request): boolean {
   const origin = request.headers.get('origin')
   if (!origin) {
     return process.env.LEAD_REQUIRE_ORIGIN !== '1'
   }
   try {
-    const allowed = new URL(SITE_URL).origin
-    if (origin === allowed) return true
+    if (leadAllowedOrigins().has(origin)) return true
     if (process.env.NODE_ENV === 'development') {
       const host = new URL(origin).hostname
       return host === 'localhost' || host === '127.0.0.1'

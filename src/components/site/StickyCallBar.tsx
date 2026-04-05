@@ -14,7 +14,7 @@ export function StickyCallBar() {
         <Button href={`tel:${PHONE_TEL}`} color="blue" className="flex-1 justify-center">
           Call
         </Button>
-        <Button href="#contact" color="slate" className="flex-1 justify-center">
+        <Button href="/#contact" color="slate" className="flex-1 justify-center">
           Quote
         </Button>
       </div>

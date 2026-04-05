@@ -63,7 +63,7 @@ export function PromoSection({ locale }: PromoSectionProps) {
                 {bullet2}
               </li>
             </ul>
-            <Button href="#contact" color="blue" className="mt-10">
+            <Button href="/#contact" color="blue" className="mt-10">
               Get in touch
             </Button>
           </div>
