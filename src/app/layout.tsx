@@ -1,5 +1,6 @@
 import { type Metadata } from 'next'
 import { Inter, Lexend } from 'next/font/google'
+import Script from 'next/script'
 import clsx from 'clsx'
 import { Suspense } from 'react'
 
@@ -17,6 +18,10 @@ import {
 } from '@/lib/site'
 
 import '@/styles/tailwind.css'
+
+/** Search Atlas dynamic optimization — injects dashboard script into `<head>`. */
+const SEARCH_ATLAS_DYNAMIC_OPT_SRC =
+  'data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gIjFiN2Q2M2RmLTQ3NjAtNDY4Ny04YmQ1LTIzZDk1ZGZiYWY1ZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw=='
 
 const pageTitle = `Garage Door Installation & Repair Miami | ${BUSINESS_NAME}`
 
@@ -144,6 +149,16 @@ export default function RootLayout({
             <SiteGoogleAnalytics gaId={GA_MEASUREMENT_ID} />
           </Suspense>
         ) : null}
+        <Script
+          id="sa-dynamic-optimization"
+          strategy="afterInteractive"
+          src={SEARCH_ATLAS_DYNAMIC_OPT_SRC}
+          data-uuid="1b7d63df-4760-4687-8bd5-23d95dfbaf5e"
+          {...({
+            nowprocket: '',
+            'nitro-exclude': '',
+          } as React.HTMLAttributes<HTMLScriptElement>)}
+        />
         {children}
       </body>
     </html>
