@@ -8,6 +8,10 @@ export const SITE_ORIGIN = SITE_URL.replace(/\/$/, '')
 export const GOOGLE_SITE_VERIFICATION =
   process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ?? ''
 
+/** GA4 measurement ID (e.g. `G-XXXXXXXXXX`). Optional; omit to disable analytics. */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? ''
+
 export const BUSINESS_NAME = '305 Doors Corp'
 export const BUSINESS_SHORT = '305 Doors'
 

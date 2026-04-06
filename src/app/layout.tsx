@@ -1,11 +1,14 @@
 import { type Metadata } from 'next'
 import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
+import { Suspense } from 'react'
 
+import { SiteGoogleAnalytics } from '@/components/site/SiteGoogleAnalytics'
 import {
   BUSINESS_NAME,
   DEFAULT_DESCRIPTION,
   FACEBOOK_URL,
+  GA_MEASUREMENT_ID,
   GOOGLE_SITE_VERIFICATION,
   INSTAGRAM_URL,
   PHONE_TEL,
@@ -136,6 +139,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {GA_MEASUREMENT_ID ? (
+          <Suspense fallback={null}>
+            <SiteGoogleAnalytics gaId={GA_MEASUREMENT_ID} />
+          </Suspense>
+        ) : null}
         {children}
       </body>
     </html>
