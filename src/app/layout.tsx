@@ -18,15 +18,6 @@ import {
 
 import '@/styles/tailwind.css'
 
-/**
- * Search Atlas dynamic optimization (vendor snippet).
- * Use a plain `<script>` — `next/script` can 404 on `data:` src by resolving it as a path.
- */
-const SEARCH_ATLAS_SNIPPET = {
-  src: 'data:text/javascript;base64,dmFyIHNjcmlwdCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO3NjcmlwdC5zZXRBdHRyaWJ1dGUoIm5vd3Byb2NrZXQiLCAiIik7c2NyaXB0LnNldEF0dHJpYnV0ZSgibml0cm8tZXhjbHVkZSIsICIiKTtzY3JpcHQuc3JjID0gImh0dHBzOi8vZGFzaGJvYXJkLnNlYXJjaGF0bGFzLmNvbS9zY3JpcHRzL2R5bmFtaWNfb3B0aW1pemF0aW9uLmpzIjtzY3JpcHQuZGF0YXNldC51dWlkID0gIjFiN2Q2M2RmLTQ3NjAtNDY4Ny04YmQ1LTIzZDk1ZGZiYWY1ZSI7c2NyaXB0LmlkID0gInNhLWR5bmFtaWMtb3B0aW1pemF0aW9uLWxvYWRlciI7ZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChzY3JpcHQpOw==',
-  uuid: '1b7d63df-4760-4687-8bd5-23d95dfbaf5e',
-} as const
-
 const pageTitle = `Garage Door Installation & Repair Miami | ${BUSINESS_NAME}`
 
 export const metadata: Metadata = {
@@ -143,20 +134,6 @@ export default function RootLayout({
         lexend.variable,
       )}
     >
-      <head>
-        {/* eslint-disable-next-line @next/next/no-sync-scripts -- vendor Search Atlas bootstrap; must stay a literal script with data: src */}
-        <script
-          suppressHydrationWarning
-          type="text/javascript"
-          id="sa-dynamic-optimization"
-          data-uuid={SEARCH_ATLAS_SNIPPET.uuid}
-          src={SEARCH_ATLAS_SNIPPET.src}
-          {...({
-            nowprocket: '',
-            'nitro-exclude': '',
-          } as Record<string, string>)}
-        />
-      </head>
       <body className="flex min-h-full flex-col">
         <script
           type="application/ld+json"
