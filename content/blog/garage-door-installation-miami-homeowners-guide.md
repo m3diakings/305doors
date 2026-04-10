@@ -3,7 +3,7 @@ title: 'Garage Door Installation in Miami: What Homeowners Need to Know Before G
 description: 'Thinking about installing a garage door in Miami? Learn how to choose the right door, what to expect during installation, and how to avoid common mistakes.'
 date: '2026-04-05'
 image: /images/305doors/blog/garage-door-installation-miami-featured.png
-imageAlt: '305 Doors technicians installing a modern glass-panel garage door at a Miami home, with service van and branded project sign'
+imageAlt: '305 Doors crew installing a modern glass-panel garage door at a Miami home, service van and branded project sign in the scene'
 ---
 
 ## Garage Door Installation in Miami: A Complete Guide for Homeowners

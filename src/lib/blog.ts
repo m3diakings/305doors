@@ -6,18 +6,32 @@ import { z } from 'zod'
 
 const blogDir = path.join(process.cwd(), 'content/blog')
 
-const frontmatterSchema = z.object({
-  title: z.string().trim().min(1),
-  description: z.string().trim().min(1),
-  date: z.string().trim().min(1),
-  /** Path under `public/`, e.g. `/images/305doors/hero-1.jpg` */
-  image: z.string().trim().min(1).optional(),
-  imageAlt: z.string().trim().min(1).optional(),
-})
+const frontmatterSchema = z
+  .object({
+    title: z.string().trim().min(1),
+    /** If set, used for `<title>` / Open Graph instead of `title` (e.g. SEO meta title). */
+    metaTitle: z.string().trim().min(1).optional(),
+    description: z.string().trim().min(1),
+    date: z.string().trim().min(1),
+    /** Path under `public/`, e.g. `/images/305doors/hero-1.jpg` */
+    image: z.string().trim().min(1).optional(),
+    /** Required when `image` is set — used for accessibility, Open Graph `og:image:alt`, and Article structured data. */
+    imageAlt: z.string().trim().min(1).optional(),
+  })
+  .superRefine((data, ctx) => {
+    if (data.image && !data.imageAlt?.trim()) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'imageAlt is required when image is set',
+        path: ['imageAlt'],
+      })
+    }
+  })
 
 export type BlogPostListItem = {
   slug: string
   title: string
+  metaTitle?: string
   description: string
   date: string
   image?: string
@@ -55,6 +69,7 @@ export function getBlogPost(slug: string): BlogPost | null {
   return {
     slug,
     title: parsed.data.title,
+    ...(parsed.data.metaTitle ? { metaTitle: parsed.data.metaTitle } : {}),
     description: parsed.data.description,
     date: parsed.data.date,
     ...(parsed.data.image ? { image: parsed.data.image } : {}),
@@ -73,9 +88,10 @@ export function getAllBlogPostsForArchive(): BlogPostListItem[] {
       if (Number.isNaN(ta) || Number.isNaN(tb)) return 0
       return tb - ta
     })
-    .map(({ slug, title, description, date, image, imageAlt }) => ({
+    .map(({ slug, title, metaTitle, description, date, image, imageAlt }) => ({
       slug,
       title,
+      ...(metaTitle ? { metaTitle } : {}),
       description,
       date,
       ...(image ? { image } : {}),

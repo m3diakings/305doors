@@ -25,27 +25,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const path = `/blog/${slug}/`
-  const ogImages = post.image
+  const documentTitle = post.metaTitle ?? post.title
+  const heroImageUrl = post.image ? `${SITE_ORIGIN}${post.image}` : null
+  const heroImageAlt = post.imageAlt ?? post.title
+  const ogImages = heroImageUrl
     ? [
         {
-          url: post.image,
-          alt: post.imageAlt ?? post.title,
+          url: heroImageUrl,
+          alt: heroImageAlt,
         },
       ]
     : undefined
 
   return {
-    title: post.title,
+    title: documentTitle,
     description: post.description,
     alternates: { canonical: path },
     openGraph: {
-      title: post.title,
+      title: documentTitle,
       description: post.description,
       url: path,
       type: 'article',
       publishedTime: post.date,
       ...(ogImages ? { images: ogImages } : {}),
     },
+    ...(heroImageUrl
+      ? {
+          twitter: {
+            card: 'summary_large_image',
+            title: documentTitle,
+            description: post.description,
+            images: [heroImageUrl],
+          },
+        }
+      : {}),
   }
 }
 
@@ -78,7 +91,12 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   if (post.image) {
-    jsonLd.image = `${SITE_ORIGIN}${post.image}`
+    const imageUrl = `${SITE_ORIGIN}${post.image}`
+    jsonLd.image = {
+      '@type': 'ImageObject',
+      url: imageUrl,
+      ...(post.imageAlt ? { caption: post.imageAlt } : {}),
+    }
   }
 
   return (
@@ -124,7 +142,7 @@ export default async function BlogPostPage({ params }: Props) {
             <p className="mt-4 max-w-3xl text-lg text-slate-600">{post.description}</p>
 
             {post.image ? (
-              <div className="relative mt-10 aspect-16/10 w-full overflow-hidden rounded-2xl bg-slate-100 ring-1 ring-slate-900/5">
+              <figure className="relative mt-10 aspect-16/10 w-full overflow-hidden rounded-2xl bg-slate-100 ring-1 ring-slate-900/5">
                 <Image
                   src={post.image}
                   alt={post.imageAlt ?? post.title}
@@ -133,7 +151,7 @@ export default async function BlogPostPage({ params }: Props) {
                   sizes="(max-width: 768px) 100vw, 768px"
                   priority
                 />
-              </div>
+              </figure>
             ) : null}
           </header>
 

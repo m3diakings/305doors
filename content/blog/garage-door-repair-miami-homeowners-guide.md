@@ -3,7 +3,7 @@ title: 'Garage Door Repair in Miami: What to Do When Your Door Stops Working'
 description: 'Garage door not working in Miami? Learn the most common problems, what you can safely check, and when to call a professional for fast repair.'
 date: '2026-03-22'
 image: /images/305doors/blog/garage-door-repair-miami-featured.png
-imageAlt: '305 Doors technicians replacing a garage door torsion spring inside a residential garage, with branded service van outside'
+imageAlt: '305 Doors technicians replacing a garage door torsion spring in a Miami residential garage, branded service van visible in the driveway'
 ---
 
 ## Garage Door Repair in Miami: A Practical Guide for Homeowners

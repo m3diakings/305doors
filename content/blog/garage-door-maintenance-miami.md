@@ -3,7 +3,7 @@ title: 'Garage Door Maintenance in Miami: How to Keep Your Door Working Like New
 description: "Learn how to maintain your garage door in Miami's climate and prevent common problems with simple, effective steps."
 date: '2026-04-07'
 image: /images/305doors/blog/garage-door-maintenance-miami-featured.png
-imageAlt: '305 Doors technician lubricating garage door tracks and torsion spring during maintenance at a Miami home, branded service truck in driveway'
+imageAlt: '305 Doors technician lubricating garage door tracks and torsion spring during preventive maintenance at a Miami home, branded truck in driveway'
 ---
 
 ## Why Garage Door Maintenance Matters More in Miami
