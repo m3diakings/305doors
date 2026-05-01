@@ -1,7 +1,7 @@
 ---
 title: "Smart Garage Doors Are Taking Over in 2026 — Here's Why Miami Homeowners Are Upgrading"
 description: "Why Miami homeowners are upgrading to smart garage doors in 2026: remote access, security, alerts, and when repair vs. a full opener upgrade makes sense."
-date: '2026-05-02'
+date: '2026-05-01'
 image: /images/305doors/blog/smart-garage-doors-miami-2026-featured.png
 imageAlt: 'Hand holding a smartphone showing a My Garage app with the door status Closed and tap to open, Wi-Fi graphic above the phone, in front of a modern home at dusk with a dark glass-panel garage door, palm trees, and a lit Miami-style skyline'
 ---

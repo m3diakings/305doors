@@ -1,7 +1,7 @@
 ---
 title: 'How Your Garage Door Affects Your Home Insurance in Florida (What Most Homeowners Don’t Know)'
 description: "Learn why Florida insurers care about your garage door, how impact-resistant doors reduce risk, and when an upgrade can affect inspections, resale, and your policy."
-date: '2026-05-01'
+date: '2026-04-30'
 image: /images/305doors/blog/garage-door-home-insurance-florida-featured.png
 imageAlt: 'Florida home with a dark sectional garage door under stormy skies and palm trees in wind, with a wet clipboard in the foreground showing a Home Insurance checklist—impact-resistant garage door, structural support, materials, wind protection, and lower risk—all checked, beside a house shield icon'
 ---
