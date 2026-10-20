@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# marketing automation credentials and scratch
+/marketing/.env
+/marketing/**/*.source.png
+__pycache__/
+*.pyc
+/marketing/runs/blog/inventory.json

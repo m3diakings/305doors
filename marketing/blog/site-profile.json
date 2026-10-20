@@ -1,0 +1,76 @@
+{
+  "site": "305doors.com",
+  "business": "305 Doors Corp",
+  "positioning": "Local South Florida garage door company: installation, repair, openers, hurricane-rated and commercial roll-up doors, with honest recommendations, transparent estimates and clear communication. Blog posts are practical, people-first advice for Miami-area homeowners and property managers, written in the plain, friendly second-person voice of the existing posts.",
+  "phone_display": "(786) 395-4042",
+  "audience": [
+    "Miami-Dade and Broward homeowners deciding between repairing and replacing a garage door",
+    "Homeowners preparing for hurricane season or dealing with insurance and code questions",
+    "Property managers and small businesses needing commercial roll-up doors, gates or openers"
+  ],
+  "services": [
+    {"name": "Garage door installation & replacement", "path": "/services/garage-door-installation/"},
+    {"name": "Garage door repair", "path": "/services/garage-door-repair/"},
+    {"name": "Emergency garage door repair (24-hour response)", "path": "/services/emergency-garage-door-repair/"},
+    {"name": "Garage door openers & smart accessories", "path": "/services/garage-door-openers/"},
+    {"name": "Hurricane-rated garage doors", "path": "/services/hurricane-rated-garage-doors/"},
+    {"name": "Commercial garage doors, roll-ups and gates", "path": "/services/commercial-garage-doors/"}
+  ],
+  "service_areas": [
+    "Miami-Dade County", "Broward County", "Palm Beach County", "Lee County", "Collier County", "Monroe County"
+  ],
+  "primary_geography": "Miami and Miami-Dade first, then Broward; mention other counties only when relevant",
+  "location_hubs": [
+    {"name": "Miami-Dade County", "path": "/garage-door-services-in-miami-dade-county/"},
+    {"name": "Broward County", "path": "/garage-door-repair-installation-in-broward-county/"},
+    {"name": "Palm Beach County", "path": "/garage-door-repair-installation-in-palm-beach-county/"},
+    {"name": "Lee County", "path": "/garage-door-repair-installation-in-lee-county/"},
+    {"name": "Collier County", "path": "/garage-door-repair-installation-in-collier-county/"},
+    {"name": "Monroe County", "path": "/garage-door-repair-installation-in-monroe-county/"}
+  ],
+  "city_page_pattern": "/<city>-garage-doors/ (for example /miami-garage-doors/, /doral-garage-doors/); use only slugs listed in marketing/runs/blog/inventory.json under repo_routes",
+  "pillar_keywords": [
+    {"pillar": "repair", "examples": ["garage door repair Miami", "garage door off track Miami", "broken garage door spring Miami", "garage door won't close"]},
+    {"pillar": "installation_and_replacement", "examples": ["garage door replacement Miami", "garage door installation cost factors", "insulated garage doors Florida"]},
+    {"pillar": "hurricane_and_code", "examples": ["hurricane-rated garage doors Miami-Dade", "impact garage doors Florida", "garage door hurricane prep checklist", "garage door insurance Florida"]},
+    {"pillar": "openers_and_smart", "examples": ["garage door opener replacement Miami", "smart garage door opener", "garage door keypad and remote problems"]},
+    {"pillar": "maintenance_and_climate", "examples": ["garage door maintenance Florida humidity", "garage door rust and salt air Miami", "garage door safety sensors"]},
+    {"pillar": "commercial", "examples": ["commercial roll-up door repair Miami", "warehouse overhead door options", "roll-up gate security"]},
+    {"pillar": "local_and_buying_guides", "examples": ["how to choose a garage door company Miami", "garage door styles for Miami homes", "garage door curb appeal"]}
+  ],
+  "topic_rotation": "Rotate pillars; do not use the same pillar as the two most recent briefs in marketing/runs/blog/*.brief.json. Existing posts already cover: repair guide, installation guide, maintenance, home value upgrades, choosing a company, cost of ignoring problems, why Miami doors fail fast, home insurance, smart garage doors. Choose a new long-tail angle, not a rewrite of those.",
+  "voice": "Match content/blog/*.md: short paragraphs, second person, practical and reassuring, local Miami climate context, '305 Doors' mentioned naturally and sparingly in bold at most once, H2 sections only (H3 allowed), no H1 in the body.",
+  "cta": "Close with a short call to action to get a free quote or call (786) 395-4042 (link to the relevant /services/ page); mention 24-hour response only for emergency repair.",
+  "priority_internal_links": [
+    "/services/garage-door-repair/",
+    "/services/garage-door-installation/",
+    "/services/emergency-garage-door-repair/",
+    "/services/hurricane-rated-garage-doors/",
+    "/services/garage-door-openers/",
+    "/services/commercial-garage-doors/",
+    "/garage-door-services-in-miami-dade-county/",
+    "/blog/"
+  ],
+  "banned_claims": [
+    "No invented prices, price ranges, discounts or financing terms (the site says only 'transparent estimates' and 'free quote')",
+    "No guarantees; warranty wording only as on the site: workmanship is stood behind and terms depend on the product line and are spelled out in the estimate",
+    "No statistics, percentages, survey results or counts of customers/jobs unless backed by an official https source linked in the post",
+    "No license, insurance or certification numbers or specific certifications not on the site",
+    "No specific response times (only the site's '24-hour response' for emergency repair), no arrival-time promises",
+    "No years-in-business figure other than 'over a decade'",
+    "No named customers, reviews, testimonials or invented case studies",
+    "No legal or insurance advice stated as fact: describe Florida building code, Miami-Dade product approval and insurance discounts as things to confirm with the building department or insurer, citing official sources",
+    "Do not change any other site content"
+  ],
+  "banned_patterns": [
+    "\\$\\s?\\d",
+    "\\bguarantee[sd]?\\b",
+    "\\blicen[sc]e\\s*(#|no\\.?|number)",
+    "\\b\\d+(\\.\\d+)?\\s?%",
+    "\\bwithin\\s+(\\d+|an?|one|two|three|thirty|sixty)\\s+(minutes?|hours?)\\b",
+    "\\b\\d{2}\\+?\\s+years\\b",
+    "\\b(lowest|cheapest|best)\\s+price\\b",
+    "\\blifetime\\s+warranty\\b"
+  ],
+  "external_sources_guidance": "Prefer official https sources for Florida/Miami-Dade facts: Florida Building Code (floridabuilding.org), Miami-Dade County product approval (miamidade.gov), Florida Division of Emergency Management / floridadisaster.org, NOAA/National Hurricane Center (nhc.noaa.gov), CPSC and UL for safety, Florida Office of Insurance Regulation. Link one to three; https only."
+}
