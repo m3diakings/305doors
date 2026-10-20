@@ -66,7 +66,13 @@ export function Footer() {
           </div>
           <p className="mt-6 text-sm text-slate-500 sm:mt-0">
             Copyright © {new Date().getFullYear()} {BUSINESS_NAME}. All rights
-            reserved.
+            reserved.{' '}
+            <Link
+              href="/privacy/"
+              className="hover:text-slate-700 hover:underline"
+            >
+              Privacy Policy
+            </Link>
           </p>
         </div>
       </Container>

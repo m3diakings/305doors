@@ -45,5 +45,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...home, ...blogIndex, ...blogPosts, ...services, ...locations]
+  const privacy: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_ORIGIN}/privacy/`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.2,
+    },
+  ]
+
+  return [
+    ...home,
+    ...blogIndex,
+    ...blogPosts,
+    ...services,
+    ...locations,
+    ...privacy,
+  ]
 }
