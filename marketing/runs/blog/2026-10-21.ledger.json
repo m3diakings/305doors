@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/garage-door-hurricane-prep-checklist-miami/",
   "image": "/images/305doors/blog/garage-door-hurricane-prep-checklist-miami-featured.jpg",
   "image_alt": "Closed residential garage door on a Miami home under dark stormy skies with palm trees bending in the wind",
-  "state": "committing",
-  "started_at": "2026-10-21T13:07:06.430904+00:00"
+  "state": "live",
+  "started_at": "2026-10-21T13:07:06.430904+00:00",
+  "commit": "84739b874849c4dda9b61381323634f9ae2b7e76",
+  "updated_at": "2026-10-21T13:08:10.822884+00:00",
+  "pushed_at": "2026-10-21T13:07:09.195441+00:00",
+  "live": true,
+  "verified_at": "2026-10-21T13:08:10.822851+00:00"
 }
