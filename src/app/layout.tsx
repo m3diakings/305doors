@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import { Suspense } from 'react'
 
 import { SiteGoogleAnalytics } from '@/components/site/SiteGoogleAnalytics'
+import { SiteOpenAiPixel } from '@/components/site/SiteOpenAiPixel'
 import {
   BUSINESS_NAME,
   DEFAULT_DESCRIPTION,
@@ -150,6 +151,9 @@ export default function RootLayout({
             <SiteGoogleAnalytics gaId={GA_MEASUREMENT_ID} />
           </Suspense>
         ) : null}
+        <Suspense fallback={null}>
+          <SiteOpenAiPixel />
+        </Suspense>
         {children}
       </body>
     </html>
