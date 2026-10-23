@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/garage-door-opener-replacement-miami/",
   "image": "/images/305doors/blog/garage-door-opener-replacement-miami-featured.jpg",
   "image_alt": "Inside a Miami garage, a ceiling-mounted garage door opener above a half-open sectional door facing a sunny palm-lined driveway",
-  "state": "committing",
-  "started_at": "2026-10-23T13:12:57.916033+00:00"
+  "state": "live",
+  "started_at": "2026-10-23T13:12:57.916033+00:00",
+  "commit": "8efab0cf35fd47faf3ff0d98e76b6bb77ef06d5a",
+  "updated_at": "2026-10-23T13:14:02.442388+00:00",
+  "pushed_at": "2026-10-23T13:13:00.957194+00:00",
+  "live": true,
+  "verified_at": "2026-10-23T13:14:02.442348+00:00"
 }
