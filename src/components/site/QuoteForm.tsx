@@ -40,7 +40,10 @@ export function QuoteForm({ className }: QuoteFormProps) {
         body: JSON.stringify(data),
       })
       setStatus(res.ok ? 'ok' : 'error')
-      if (res.ok) form.reset()
+      if (res.ok) {
+        form.reset()
+        window.oaiq?.('measure', 'lead_created', { type: 'customer_action' })
+      }
     } catch {
       setStatus('error')
     }
