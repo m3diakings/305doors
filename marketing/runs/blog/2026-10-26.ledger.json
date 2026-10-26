@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/garage-door-off-track-miami/",
   "image": "/images/305doors/blog/garage-door-off-track-miami-featured.jpg",
   "image_alt": "Closed white garage door on a Miami home sitting slightly crooked in its tracks in warm afternoon light",
-  "state": "committing",
-  "started_at": "2026-10-26T13:16:53.765791+00:00"
+  "state": "live",
+  "started_at": "2026-10-26T13:16:53.765791+00:00",
+  "commit": "358e71912df31125d618b5e2743330e891a34b94",
+  "updated_at": "2026-10-26T13:17:58.033655+00:00",
+  "pushed_at": "2026-10-26T13:16:56.473415+00:00",
+  "live": true,
+  "verified_at": "2026-10-26T13:17:58.033628+00:00"
 }
