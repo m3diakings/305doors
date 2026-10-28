@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/commercial-roll-up-door-repair-miami/",
   "image": "/images/305doors/blog/commercial-roll-up-door-repair-miami-featured.jpg",
   "image_alt": "Closed steel roll-up door on a Miami warehouse loading bay in afternoon light",
-  "state": "committing",
-  "started_at": "2026-10-28T13:26:14.293647+00:00"
+  "state": "live",
+  "started_at": "2026-10-28T13:26:14.293647+00:00",
+  "commit": "c6acdbed5555c061a515bd0959214474b1e03237",
+  "updated_at": "2026-10-28T13:27:18.798875+00:00",
+  "pushed_at": "2026-10-28T13:26:17.491843+00:00",
+  "live": true,
+  "verified_at": "2026-10-28T13:27:18.798839+00:00"
 }
