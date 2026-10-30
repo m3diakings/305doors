@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/garage-door-sensors-not-working-miami/",
   "image": "/images/305doors/blog/garage-door-sensors-not-working-miami-featured.jpg",
   "image_alt": "Close-up of a small garage door safety sensor mounted on a track bracket near the floor of a Miami garage with a sunny driveway beyond",
-  "state": "committing",
-  "started_at": "2026-10-30T13:15:10.128640+00:00"
+  "state": "live",
+  "started_at": "2026-10-30T13:15:10.128640+00:00",
+  "commit": "4b68d7db04efa531192799bfad0089c3b50b7840",
+  "updated_at": "2026-10-30T13:16:13.802367+00:00",
+  "pushed_at": "2026-10-30T13:15:12.531769+00:00",
+  "live": true,
+  "verified_at": "2026-10-30T13:16:13.802332+00:00"
 }
