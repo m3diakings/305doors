@@ -94,6 +94,15 @@ export async function POST(request: Request) {
     contact: data.contact,
     address: data.address,
     message: data.message,
+    gclid: data.gclid,
+    gbraid: data.gbraid,
+    wbraid: data.wbraid,
+    utm_source: data.utm_source,
+    utm_medium: data.utm_medium,
+    utm_campaign: data.utm_campaign,
+    utm_term: data.utm_term,
+    utm_content: data.utm_content,
+    landing_page: data.landing_page,
   }
 
   const channelResults: boolean[] = []

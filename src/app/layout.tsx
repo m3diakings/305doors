@@ -3,6 +3,7 @@ import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
 import { Suspense } from 'react'
 
+import { SiteAttributionCapture } from '@/components/site/SiteAttributionCapture'
 import { SiteGoogleAnalytics } from '@/components/site/SiteGoogleAnalytics'
 import { SiteOpenAiPixel } from '@/components/site/SiteOpenAiPixel'
 import {
@@ -151,6 +152,7 @@ export default function RootLayout({
             <SiteGoogleAnalytics gaId={GA_MEASUREMENT_ID} />
           </Suspense>
         ) : null}
+        <SiteAttributionCapture />
         <Suspense fallback={null}>
           <SiteOpenAiPixel />
         </Suspense>
