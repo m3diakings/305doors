@@ -2,6 +2,25 @@ import { z } from 'zod'
 
 import { BUSINESS_NAME, PHONE_DISPLAY, PHONE_TEL, SITE_ORIGIN } from '@/lib/site'
 
+/** Optional attribution string: trimmed, truncated (never rejects the lead), empty becomes undefined. */
+const attributionField = z
+  .string()
+  .optional()
+  .catch(undefined)
+  .transform((v) => v?.trim().slice(0, 500) || undefined)
+
+export const LEAD_ATTRIBUTION_KEYS = [
+  'gclid',
+  'gbraid',
+  'wbraid',
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_term',
+  'utm_content',
+  'landing_page',
+] as const
+
 /** Public lead payload (honeypot must stay empty — bots fill it). */
 export const leadPayloadSchema = z.object({
   name: z.string().trim().min(1, 'Name is required').max(200),
@@ -10,6 +29,15 @@ export const leadPayloadSchema = z.object({
   message: z.string().trim().min(1, 'Message is required').max(8000),
   /** Honeypot: leave blank; hidden in UI */
   website: z.string().optional(),
+  gclid: attributionField,
+  gbraid: attributionField,
+  wbraid: attributionField,
+  utm_source: attributionField,
+  utm_medium: attributionField,
+  utm_campaign: attributionField,
+  utm_term: attributionField,
+  utm_content: attributionField,
+  landing_page: attributionField,
 })
 
 export type LeadPayload = z.infer<typeof leadPayloadSchema>
@@ -65,6 +93,21 @@ export function splitLeadContactFields(contact: string): {
   return { email, phone }
 }
 
+/** Team-email "Source" rows; click IDs are reported as present/absent only. */
+function leadSourceRows(payload: LeadPayload): [string, string][] {
+  const hasClickId = Boolean(payload.gclid || payload.gbraid || payload.wbraid)
+  const rows: [string, string | undefined][] = [
+    ['Google click ID', hasClickId ? 'yes' : 'no'],
+    ['utm_source', payload.utm_source],
+    ['utm_medium', payload.utm_medium],
+    ['utm_campaign', payload.utm_campaign],
+    ['utm_term', payload.utm_term],
+    ['utm_content', payload.utm_content],
+    ['Landing page', payload.landing_page],
+  ]
+  return rows.filter((r): r is [string, string] => r[1] !== undefined)
+}
+
 export function formatLeadEmailText(payload: LeadPayload): string {
   return [
     `Name: ${payload.name}`,
@@ -73,6 +116,9 @@ export function formatLeadEmailText(payload: LeadPayload): string {
     '',
     'Message:',
     payload.message,
+    '',
+    'Source:',
+    ...leadSourceRows(payload).map(([k, v]) => `${k}: ${v}`),
   ].join('\n')
 }
 
@@ -82,7 +128,8 @@ export function formatLeadEmailHtml(payload: LeadPayload): string {
     ['Contact', payload.contact],
     ['Address', payload.address],
     ['Message', payload.message],
-  ] as const
+    ...leadSourceRows(payload).map(([k, v]): [string, string] => [`Source: ${k}`, v]),
+  ]
   const body = rows
     .map(
       ([k, v]) =>

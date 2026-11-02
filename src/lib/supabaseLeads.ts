@@ -1,6 +1,10 @@
 import { createClient, type SupabaseClient } from '@supabase/supabase-js'
 
-import { type LeadPayload, splitLeadContactFields } from '@/lib/lead'
+import {
+  LEAD_ATTRIBUTION_KEYS,
+  type LeadPayload,
+  splitLeadContactFields,
+} from '@/lib/lead'
 import { BUSINESS_NAME } from '@/lib/site'
 
 function supabaseUrl(): string | undefined {
@@ -40,6 +44,11 @@ export async function insertLeadInSupabase(data: LeadPayload): Promise<boolean> 
     message: data.message,
     source: '305doors-web',
     business: BUSINESS_NAME,
+    ...Object.fromEntries(
+      LEAD_ATTRIBUTION_KEYS.flatMap((key) =>
+        data[key] !== undefined ? [[key, data[key]]] : [],
+      ),
+    ),
   }
 
   const { error } = await client.from(table).insert(row)

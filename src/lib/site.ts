@@ -12,6 +12,11 @@ export const GOOGLE_SITE_VERIFICATION =
 export const GA_MEASUREMENT_ID =
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? ''
 
+/** Google Ads conversion tag (public). */
+export const GOOGLE_ADS_ID = 'AW-957785966'
+/** Google Ads conversion `send_to` for "Quote form submitted" (public). */
+export const GOOGLE_ADS_QUOTE_CONVERSION = `${GOOGLE_ADS_ID}/KWAbCLLb8LAdEO7O2sgD`
+
 export const BUSINESS_NAME = '305 Doors Corp'
 export const BUSINESS_SHORT = '305 Doors'
 

@@ -5,6 +5,8 @@ import clsx from 'clsx'
 
 import { Button } from '@/components/Button'
 import { TextField } from '@/components/Fields'
+import { getAttribution } from '@/lib/attribution'
+import { trackLeadConversion } from '@/lib/leadTracking'
 import { PHONE_DISPLAY } from '@/lib/site'
 
 const textareaClasses =
@@ -32,6 +34,7 @@ export function QuoteForm({ className }: QuoteFormProps) {
       address: (form.elements.namedItem('address') as HTMLInputElement).value,
       message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
       website: (form.elements.namedItem('website') as HTMLInputElement).value,
+      ...getAttribution(),
     }
     try {
       const res = await fetch('/api/lead', {
@@ -43,6 +46,7 @@ export function QuoteForm({ className }: QuoteFormProps) {
       if (res.ok) {
         form.reset()
         window.oaiq?.('measure', 'lead_created', { type: 'customer_action' })
+        if (!data.website.trim()) trackLeadConversion()
       }
     } catch {
       setStatus('error')
