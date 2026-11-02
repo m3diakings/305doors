@@ -51,3 +51,12 @@ export async function insertLeadInSupabase(data: LeadPayload): Promise<boolean> 
 
   return true
 }
+
+/** Cheapest possible read on the leads table; keeps a free-plan project from pausing. */
+export async function pingSupabaseLeads(): Promise<boolean> {
+  const client = getServiceClient()
+  if (!client) return false
+  const table = process.env.SUPABASE_LEADS_TABLE?.trim() || DEFAULT_TABLE
+  const { error } = await client.from(table).select('id', { head: true, count: 'exact' }).limit(1)
+  return !error
+}
