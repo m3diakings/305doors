@@ -42,3 +42,4 @@ __pycache__/
 *.pyc
 /marketing/runs/blog/inventory.json
 /marketing/client_secret*.json
+/marketing/gcp-service-account.json
