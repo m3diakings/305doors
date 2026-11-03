@@ -9,8 +9,8 @@ Usage:
   python3 gapi.py ads <customer_id> '<GAQL>' # read-only Google Ads query
 
 Needs only the standard library plus `cryptography`. The key file (git-ignored) is
-marketing/gcp-service-account.json; in cloud runs the key's JSON comes from the
-GCP_SERVICE_ACCOUNT_JSON variable instead. Never print or commit it.
+marketing/gcp-service-account.json; in cloud runs the key comes from the
+GCP_SERVICE_ACCOUNT_JSON variable instead, as JSON or as base64 of the JSON file. Never print or commit it.
 """
 import base64, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 from cryptography.hazmat.primitives import hashes, serialization
@@ -34,6 +34,8 @@ def token(api):
     """Access token for 'gsc', 'ga' or 'ads', signed with the service account key."""
     if api not in _tokens:
         env_key = os.environ.get('GCP_SERVICE_ACCOUNT_JSON')
+        if env_key and not env_key.lstrip().startswith('{'):
+            env_key = base64.b64decode(env_key).decode()
         sa = json.loads(env_key) if env_key else json.load(open(KEY_FILE))
         now = int(time.time())
         head = _b64(json.dumps({'alg': 'RS256', 'typ': 'JWT'}).encode())
