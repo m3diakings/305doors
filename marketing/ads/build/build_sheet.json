@@ -1,0 +1,671 @@
+{
+  "account": "3569648608",
+  "campaign": {
+    "name": "305 DOORS | Search | New & Replacement",
+    "status": "PAUSED",
+    "channel": "SEARCH",
+    "networks": {
+      "google_search": true,
+      "search_partners": false,
+      "display": false
+    },
+    "daily_budget_usd": 32.0,
+    "bidding": {
+      "strategy": "MAXIMIZE_CLICKS",
+      "max_cpc_usd": 25.0
+    },
+    "locations": [
+      {
+        "id": 9057286,
+        "name": "Miami-Dade County"
+      },
+      {
+        "id": 1014969,
+        "name": "Broward County"
+      }
+    ],
+    "location_option": "PRESENCE",
+    "languages": [
+      {
+        "id": 1000,
+        "name": "English"
+      },
+      {
+        "id": 1003,
+        "name": "Spanish"
+      }
+    ],
+    "conversion_goals": [
+      "SUBMIT_LEAD_FORM / Website (Quote form submitted)",
+      "PHONE_CALL_LEAD / Calls from ads (60 s+)"
+    ],
+    "final_url_suffix": "utm_source=google&utm_medium=cpc&utm_campaign=new-replacement&utm_content={adgroupid}",
+    "contains_eu_political_advertising": "DOES_NOT_CONTAIN_EU_POLITICAL_ADVERTISING"
+  },
+  "ad_groups": [
+    {
+      "name": "Installation & Replacement",
+      "final_url": "https://305doors.com/services/garage-door-installation/",
+      "path": [
+        "Garage-Doors",
+        "Installation"
+      ],
+      "keywords": [
+        {
+          "text": "garage door installation",
+          "vol": 590
+        },
+        {
+          "text": "garage door installation near me",
+          "vol": 390
+        },
+        {
+          "text": "garage door installation cost",
+          "vol": 170
+        },
+        {
+          "text": "garage door replacement",
+          "vol": 260
+        },
+        {
+          "text": "garage door replacement near me",
+          "vol": 90
+        },
+        {
+          "text": "garage door replacement cost",
+          "vol": 70
+        },
+        {
+          "text": "replace garage door",
+          "vol": null
+        },
+        {
+          "text": "garage door installers near me",
+          "vol": null
+        },
+        {
+          "text": "new garage door",
+          "vol": 40
+        },
+        {
+          "text": "new garage door cost",
+          "vol": 30
+        },
+        {
+          "text": "new garage door installation",
+          "vol": 10
+        }
+      ],
+      "ads": [
+        {
+          "headlines": [
+            "New Garage Door Installation",
+            "Garage Door Replacement",
+            "305 Doors | Garage Doors",
+            "Miami-Dade & Broward Service",
+            "Residential & Commercial",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Request a Quote Online",
+            "Call for a Free Estimate",
+            "Replace Your Old Garage Door",
+            "Over 10 Years of Experience",
+            "Impact Garage Doors",
+            "Modern & Classic Door Styles",
+            "Local Garage Door Installers"
+          ],
+          "pins": {},
+          "descriptions": [
+            "New and replacement garage doors for homes and businesses in Miami-Dade and Broward.",
+            "Residential and commercial doors installed by 305 Doors. Free estimates.",
+            "Tell us about your garage and we'll follow up with door options and a quote.",
+            "Free estimates and fast installation. We install most brands. Request a quote today."
+          ]
+        },
+        {
+          "headlines": [
+            "Garage Door Replacement",
+            "New Garage Door Installation",
+            "305 Doors | Garage Doors",
+            "Miami-Dade & Broward Service",
+            "Residential & Commercial",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Request a Quote Online",
+            "Call for a Free Estimate",
+            "Replace Your Old Garage Door",
+            "Over 10 Years of Experience",
+            "Impact Garage Doors",
+            "Modern & Classic Door Styles",
+            "Local Garage Door Installers"
+          ],
+          "pins": {
+            "Garage Door Replacement": "HEADLINE_1"
+          },
+          "descriptions": [
+            "Time for a new garage door? We replace and install doors across Miami-Dade and Broward.",
+            "Residential and commercial doors installed by 305 Doors. Free estimates.",
+            "Tell us about your garage and we'll follow up with door options and a quote.",
+            "Free estimates and fast installation. We install most brands. Request a quote today."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Impact & Hurricane",
+      "final_url": "https://305doors.com/services/hurricane-rated-garage-doors/",
+      "path": [
+        "Impact-Doors",
+        "Hurricane"
+      ],
+      "keywords": [
+        {
+          "text": "impact garage doors",
+          "vol": 140
+        },
+        {
+          "text": "hurricane garage doors",
+          "vol": 90
+        },
+        {
+          "text": "hurricane impact garage doors",
+          "vol": 50
+        },
+        {
+          "text": "impact rated garage doors",
+          "vol": 30
+        },
+        {
+          "text": "hurricane rated garage door",
+          "vol": 50
+        },
+        {
+          "text": "impact garage doors miami",
+          "vol": 10
+        },
+        {
+          "text": "wind rated garage doors",
+          "vol": 10
+        },
+        {
+          "text": "hurricane proof garage doors",
+          "vol": 50
+        },
+        {
+          "text": "impact garage door installation",
+          "vol": null
+        }
+      ],
+      "ads": [
+        {
+          "headlines": [
+            "Impact Garage Doors",
+            "Hurricane Garage Doors",
+            "Hurricane-Approved Doors",
+            "Hurricane Impact Garage Doors",
+            "Impact Door Replacement",
+            "Impact Doors Installed",
+            "Protect Your Home & Garage",
+            "305 Doors | Garage Doors",
+            "Miami-Dade & Broward Service",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Request a Quote Online",
+            "Call for a Free Estimate",
+            "Over 10 Years of Experience"
+          ],
+          "pins": {},
+          "descriptions": [
+            "Hurricane-approved impact garage doors, installed across Miami-Dade and Broward.",
+            "Replace an old door with a hurricane-approved impact door. Request a quote today.",
+            "Impact garage doors from 305 Doors. Free estimates and fast installation.",
+            "Tell us about your garage and we'll follow up with impact door options and a quote."
+          ]
+        },
+        {
+          "headlines": [
+            "Hurricane Garage Doors",
+            "Impact Garage Doors",
+            "Hurricane-Approved Doors",
+            "Hurricane Impact Garage Doors",
+            "Impact Door Replacement",
+            "Impact Doors Installed",
+            "Protect Your Home & Garage",
+            "305 Doors | Garage Doors",
+            "Miami-Dade & Broward Service",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Request a Quote Online",
+            "Call for a Free Estimate",
+            "Over 10 Years of Experience"
+          ],
+          "pins": {
+            "Hurricane Garage Doors": "HEADLINE_1"
+          },
+          "descriptions": [
+            "Replace an old door with a hurricane-approved impact door. Request a quote today.",
+            "Hurricane-approved impact garage doors, installed across Miami-Dade and Broward.",
+            "Impact garage doors from 305 Doors. Free estimates and fast installation.",
+            "Tell us about your garage and we'll follow up with impact door options and a quote."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Commercial",
+      "final_url": "https://305doors.com/services/commercial-garage-doors/",
+      "path": [
+        "Commercial",
+        "Roll-Up-Doors"
+      ],
+      "keywords": [
+        {
+          "text": "commercial garage doors",
+          "vol": 50
+        },
+        {
+          "text": "commercial garage door installation",
+          "vol": 40
+        },
+        {
+          "text": "commercial roll up doors",
+          "vol": 10
+        },
+        {
+          "text": "rolling steel doors",
+          "vol": 10
+        },
+        {
+          "text": "commercial overhead doors",
+          "vol": 20
+        }
+      ],
+      "ads": [
+        {
+          "headlines": [
+            "Commercial Garage Doors",
+            "Roll-Up & Overhead Doors",
+            "Commercial Door Installation",
+            "Rolling Steel Doors",
+            "Industrial & Commercial Doors",
+            "Doors for Warehouses & Shops",
+            "305 Doors | Commercial",
+            "Miami-Dade & Broward Service",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Request a Quote Online",
+            "Call for a Free Estimate",
+            "Commercial Door Replacement",
+            "Over 10 Years of Experience"
+          ],
+          "pins": {},
+          "descriptions": [
+            "Roll-up, overhead and commercial garage doors for Miami-Dade and Broward businesses.",
+            "New and replacement doors for warehouses, shops and garages. Request a quote today.",
+            "Commercial and industrial door installation by 305 Doors. Free estimates.",
+            "Tell us about your building and we'll follow up with door options and a quote."
+          ]
+        },
+        {
+          "headlines": [
+            "Roll-Up & Overhead Doors",
+            "Commercial Garage Doors",
+            "Commercial Door Installation",
+            "Rolling Steel Doors",
+            "Industrial & Commercial Doors",
+            "Doors for Warehouses & Shops",
+            "305 Doors | Commercial",
+            "Miami-Dade & Broward Service",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Request a Quote Online",
+            "Call for a Free Estimate",
+            "Commercial Door Replacement",
+            "Over 10 Years of Experience"
+          ],
+          "pins": {
+            "Roll-Up & Overhead Doors": "HEADLINE_1"
+          },
+          "descriptions": [
+            "New and replacement doors for warehouses, shops and garages. Request a quote today.",
+            "Roll-up, overhead and commercial garage doors for Miami-Dade and Broward businesses.",
+            "Commercial and industrial door installation by 305 Doors. Free estimates.",
+            "Tell us about your building and we'll follow up with door options and a quote."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Local Company",
+      "final_url": "https://305doors.com/services/garage-door-installation/",
+      "path": [
+        "Miami",
+        "Broward"
+      ],
+      "keywords": [
+        {
+          "text": "garage door miami",
+          "vol": 170
+        },
+        {
+          "text": "garage doors miami",
+          "vol": null
+        },
+        {
+          "text": "garage door company miami",
+          "vol": null
+        },
+        {
+          "text": "garage door fort lauderdale",
+          "vol": 50
+        },
+        {
+          "text": "garage doors broward",
+          "vol": 10
+        }
+      ],
+      "ads": [
+        {
+          "headlines": [
+            "Miami Garage Door Company",
+            "Fort Lauderdale Garage Doors",
+            "Broward Garage Door Company",
+            "Your Local Garage Door Team",
+            "305 Doors | Garage Doors",
+            "New Garage Door Installation",
+            "Garage Door Replacement",
+            "Impact Garage Doors",
+            "Residential & Commercial",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Over 10 Years of Experience",
+            "Call for a Free Estimate",
+            "Miami-Dade & Broward Service"
+          ],
+          "pins": {},
+          "descriptions": [
+            "New and replacement garage doors, including impact doors, across Miami-Dade and Broward.",
+            "Residential and commercial doors installed by 305 Doors. Free estimates.",
+            "Tell us about your garage and we'll follow up with door options and a quote.",
+            "Free estimates and fast installation. We install most brands. Request a quote today."
+          ]
+        },
+        {
+          "headlines": [
+            "Your Local Garage Door Team",
+            "Miami Garage Door Company",
+            "Fort Lauderdale Garage Doors",
+            "Broward Garage Door Company",
+            "305 Doors | Garage Doors",
+            "New Garage Door Installation",
+            "Garage Door Replacement",
+            "Impact Garage Doors",
+            "Residential & Commercial",
+            "Free Estimates",
+            "Fast Installation",
+            "We Install Most Brands",
+            "Over 10 Years of Experience",
+            "Call for a Free Estimate",
+            "Miami-Dade & Broward Service"
+          ],
+          "pins": {
+            "Your Local Garage Door Team": "HEADLINE_1"
+          },
+          "descriptions": [
+            "Residential and commercial doors installed by 305 Doors. Free estimates.",
+            "New and replacement garage doors, including impact doors, across Miami-Dade and Broward.",
+            "Tell us about your garage and we'll follow up with door options and a quote.",
+            "Free estimates and fast installation. We install most brands. Request a quote today."
+          ]
+        }
+      ]
+    }
+  ],
+  "campaign_negatives": {
+    "Repair and parts (not the goal at launch)": [
+      "repair",
+      "repairs",
+      "fix",
+      "broken",
+      "spring",
+      "springs",
+      "cable",
+      "cables",
+      "opener",
+      "openers",
+      "remote",
+      "remotes",
+      "keypad",
+      "keypads",
+      "sensor",
+      "sensors",
+      "track",
+      "tracks",
+      "roller",
+      "rollers",
+      "roller replacement",
+      "hinge",
+      "hinges",
+      "parts",
+      "panel replacement",
+      "replacement panel",
+      "panels for sale",
+      "glass replacement",
+      "motor",
+      "motors",
+      "lock",
+      "weather stripping",
+      "seal",
+      "seals",
+      "emergency",
+      "garage door service",
+      "garage door services",
+      "tune up",
+      "maintenance",
+      "24 hour",
+      "same day"
+    ],
+    "DIY, retail and research": [
+      "diy",
+      "how to",
+      "youtube",
+      "video",
+      "videos",
+      "lowes",
+      "lowe's",
+      "home depot",
+      "costco",
+      "menards",
+      "harbor freight",
+      "amazon",
+      "used",
+      "craigslist",
+      "sizes",
+      "size",
+      "dimensions",
+      "standard size",
+      "weight",
+      "drawing",
+      "clipart",
+      "png",
+      "kit",
+      "kits",
+      "for sale online"
+    ],
+    "Not a garage door": [
+      "windows and doors",
+      "window and door",
+      "doors and windows",
+      "window replacement",
+      "windows replacement",
+      "impact windows",
+      "commercial window",
+      "entry door",
+      "entry doors",
+      "front door",
+      "front doors",
+      "sliding door",
+      "sliding doors",
+      "patio door",
+      "patio doors",
+      "interior door",
+      "exterior door",
+      "exterior doors",
+      "shed",
+      "sheds",
+      "car mechanic",
+      "car repair",
+      "car wash",
+      "car garage",
+      "auto",
+      "mechanic",
+      "garage sale",
+      "screen",
+      "screens",
+      "faux",
+      "skin",
+      "carport",
+      "for rent",
+      "rent a"
+    ],
+    "Jobs and training": [
+      "job",
+      "jobs",
+      "hiring",
+      "salary",
+      "career",
+      "careers",
+      "training",
+      "course",
+      "technician jobs"
+    ],
+    "Other companies": [
+      "overhead door company",
+      "overhead door co",
+      "overheaddoor",
+      "precision",
+      "precise",
+      "d&d",
+      "d & d",
+      "american garage door",
+      "elite",
+      "aaa",
+      "a1",
+      "a 1",
+      "door doctor"
+    ],
+    "Out of the current rollout": [
+      "orlando",
+      "tampa",
+      "jacksonville",
+      "tallahassee",
+      "gainesville",
+      "ocala",
+      "naples",
+      "collier"
+    ]
+  },
+  "assets": {
+    "sitelinks": [
+      {
+        "text": "Impact Garage Doors",
+        "d1": "Hurricane-approved impact doors",
+        "d2": "Installed in Miami-Dade & Broward",
+        "url": "https://305doors.com/services/hurricane-rated-garage-doors/"
+      },
+      {
+        "text": "Door Installation",
+        "d1": "New and replacement doors",
+        "d2": "Residential garage doors",
+        "url": "https://305doors.com/services/garage-door-installation/"
+      },
+      {
+        "text": "Commercial Doors",
+        "d1": "Roll-up and overhead doors",
+        "d2": "For warehouses and shops",
+        "url": "https://305doors.com/services/commercial-garage-doors/"
+      },
+      {
+        "text": "Request a Quote",
+        "d1": "Free estimates",
+        "d2": "We'll follow up with options",
+        "url": "https://305doors.com/#contact"
+      }
+    ],
+    "callouts": [
+      "Free Estimates",
+      "Fast Installation",
+      "We Install Most Brands",
+      "In Business Since 2019",
+      "Residential & Commercial",
+      "Serving Miami-Dade",
+      "Serving Broward",
+      "Online Quote Requests"
+    ],
+    "structured_snippet": {
+      "header": "Types",
+      "values": [
+        "Residential Doors",
+        "Commercial Doors",
+        "Impact Doors",
+        "Roll-Up Doors",
+        "Overhead Doors"
+      ]
+    },
+    "call": {
+      "phone": "+17863954042",
+      "display": "(786) 395-4042",
+      "schedule_miami": "Mon-Sat 08:00-18:00",
+      "schedule_account_pacific": "Mon-Sat 05:00-15:00",
+      "count_after_seconds": 60
+    }
+  },
+  "pending_claims": [],
+  "confirmed_claims": [
+    {
+      "claim": "All impact doors are hurricane approved (ad wording: \"hurricane approved\")",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "Free estimates",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "Installs most brands",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "Fast installation (no specific timeframe stated)",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "No financing offered: never mentioned in ads",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "No license number in ads (Osniel's choice)",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "Company founded 2019-10-04; about 11 years of experience including 4 years at other companies (ad wording: \"Over 10 Years of Experience\", \"In Business Since 2019\"; matches the homepage \"Over a decade serving South Florida\")",
+      "date": "2026-11-02"
+    },
+    {
+      "claim": "No warranty mentioned in ads (Osniel's choice)",
+      "date": "2026-11-02"
+    }
+  ],
+  "held_claims": [
+    {
+      "claim": "24-hour response",
+      "why": "site uses it only for emergency repair; in new-door ads it would pull repair calls"
+    }
+  ]
+}

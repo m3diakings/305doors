@@ -17,6 +17,32 @@ Entry format:
 - Result: <filled in at the check date; "reversed on <date>" if it made things worse>
 ```
 
+## 2026-11-02 — Phone link taps on the website tracked (GA4 and Google Ads)
+- Where: conversion action 7887309527 "Phone link tapped (website)" (Website, category Phone call lead, secondary, one per click, 90-day click window); GA4 key event `phone_click` (property 379587463); 305doors.com PR #10
+- Approval: approved by Osniel on 2026-11-02 ("we need to add tracking to phone numbers on the site")
+- Evidence: only quote forms and calls straight from ads were counted; a visitor who clicked an ad and then called from the site left no record
+- Change: every `tel:` link fires GA4 `phone_click` and the Google Ads conversion `AW-957785966/A-LZCNeV-7AdEO7O2sgD`. Secondary means it shows in "All conversions" and does not steer bidding: a tap is not a connected call
+- Verified: built site in headless Chromium; a tap pushes both events and sends the Google Ads conversion requests
+- Expected effect: calls from the site by ad visitors appear in Google Ads and GA4
+- Check on: first week live — taps recorded in GA4; compare against calls the team receives. Decide then whether taps become primary
+- Result: live 2026-11-02 (PR #10 merged as b11034a). Osniel's test tap from a phone on the live site shows in GA4 realtime as 1 `phone_click` (mobile). The Google Ads conversion is confirmed only on the first tap from a real ad click
+
+## 2026-11-02 — Created "305 DOORS | Search | New & Replacement" (paused)
+- Where: new Search campaign 24429434104 (budget $32/day)
+- Approval: approved by Osniel on 2026-11-02 ("build it"), after an independent review of the build sheet and the fixes it required (build sheet https://claude.ai/artifact/2swtVYdFmcRfdzQWedsnN9)
+- Evidence: Keyword Planner volumes and bids for Miami-Dade and Broward, 2026-11-02; 2023–2024 search terms (most spend on windows/doors, parts and openers); audit of the paused campaigns
+- What was created (236 operations in one atomic request, read back and matched to `build/build_sheet.json`):
+  - Paused; Google Search only; Miami-Dade (9057286) and Broward (1014969), presence only; English and Spanish users
+  - $32/day; Maximize Clicks with a $25 max CPC; URL suffix with UTM source, medium, campaign and ad group id
+  - 4 ad groups (Installation & Replacement, Impact & Hurricane, Commercial, Local Company), 30 keywords as 60 phrase/exact entries; 130 campaign phrase negatives
+  - 2 responsive search ads per group; no phone number, warranty, license, financing or 24-hour wording in ad text
+  - 4 sitelinks, 8 callouts, 1 structured snippet, 1 call asset (786) 395-4042 Mon–Sat 05:00–15:00 Pacific (8am–6pm Miami)
+  - 15 keywords carry a "Local services" policy exemption request (Google's validation flagged them as exemptible; the account ran similar keywords before)
+- Untouched: "SEARCH | CALLS | 305 DOORS" and "P-MAX | 305 DOORS" stay paused
+- Expected effect: none until switched on
+- Check on: review complete (usually 1 business day) — ads and keywords approved; launch week — search terms
+- Result: created; at creation all 8 ads were "review in progress" and all 60 keywords "under review"
+
 ## 2026-11-02 — Website: Google Ads tag, lead conversion events, click-ID capture
 - Where: 305doors.com, PR #6 (merged as 3e6580e); Supabase `leads` gained gclid, gbraid, wbraid, utm_*, landing_page (SQL run by Osniel)
 - Approval: approved by Osniel on 2026-11-02 (tracking fix, steps 1–3)

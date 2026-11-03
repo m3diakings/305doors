@@ -1,0 +1,1184 @@
+{
+ "mutateOperationResponses": [
+  {
+   "campaignBudgetResult": {
+    "resourceName": "customers/3569648608/campaignBudgets/16005293401"
+   }
+  },
+  {
+   "campaignResult": {
+    "resourceName": "customers/3569648608/campaigns/24429434104"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~9057286"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~1014969"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~1000"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~1003"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~29151076"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~145818155"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~101200512"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~105084415"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~37118830"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~100048005"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~28413011"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~22416750"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~114147874"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~143721823"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~100293025"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~120880040"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~45198132"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~168029718"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~28025202"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~55757990"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~72795760"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~91478045"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~10055792"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~132956552"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~302280904966"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~91926738"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~91926518"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~20460221"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~296164356430"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~154268822"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~300185873412"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~278142664"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~21170880"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~21170470"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~26645861"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~37381931"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~56912710"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~56912930"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~35331930"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~367750788"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~1350826747"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~99300462"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~34040201"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~57243761"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~34280772"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~33920640"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~12471160"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~801190167"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~18527580"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~31038841"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~104575737"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~117448301"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17273460"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~51871120"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~189035596"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~109463893"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~29754051"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~36350700"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~119692522"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~279190162"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~97633944"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~153030053"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~529381560"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~14039930"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~89524872"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17597780"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~67101321"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~99985424"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~99984804"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~272345372"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~19874811"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~106509055"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~100344878"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~84519531"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~135513462"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~1075048262"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~264447574"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17888700"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~10498941"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17889030"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~10498951"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~91516515"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~91516735"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17888850"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17888740"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~13570303"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~17888820"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~10498931"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~90952283"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~16482802"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~14115630"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~43103582"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~95253316"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~88282997"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~21170450"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~125882322"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~18812210"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~42527191"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~42710490"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~16069526"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~24385151"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~88699271"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~24498061"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~131186717"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~20584210"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~20584260"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~50617553"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~43322030"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~20584200"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~20584220"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~15699942"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~63701321"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~179264916"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~374447887"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~709260826"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~389667341037"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~88567842"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~333566168"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~23102811"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~154082811"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~2445969344"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~138237633"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~29642813"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~138234713"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~122479698"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~298043092475"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~35317330"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~15074712"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~33109551"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~93930914"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~141779217"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~172664742"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~89027297"
+   }
+  },
+  {
+   "campaignCriterionResult": {
+    "resourceName": "customers/3569648608/campaignCriteria/24429434104~115358829"
+   }
+  },
+  {
+   "adGroupResult": {
+    "resourceName": "customers/3569648608/adGroups/202153716896"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~155586113"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~94108579"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~75922777455"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~75922987335"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~2148889698"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~1295578007"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~310284447"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~341602503"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~301400745782"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~340083958691"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~2802259108"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~1970530121"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~294084448"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~1013658716"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~75922778775"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~75922988655"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~130689995"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~130689475"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~4653995030"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~3825760595"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~2802290728"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153716896~4211619725"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/202153716896~830392770902"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/202153716896~830392770905"
+   }
+  },
+  {
+   "adGroupResult": {
+    "resourceName": "customers/3569648608/adGroups/202153717136"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~10524059451"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~12194808593"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~1968967966"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~1969021066"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~12699207203"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~12699250493"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~627983913292"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~323617430128"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~6512422237"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~2819993848"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~366179380307"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~323723053085"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~10790104639"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~322806457610"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~5208391408"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~321851590216"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~2448777369256"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/202153717136~2434243473819"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/202153717136~830310366142"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/202153717136~830310366145"
+   }
+  },
+  {
+   "adGroupResult": {
+    "resourceName": "customers/3569648608/adGroups/198700836381"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~548484483"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~323349558"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~2230153462"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~5704047839"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~769184192"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~3169139510"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~766652702"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~230558394"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~374450047"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/198700836381~374450107"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/198700836381~830310377986"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/198700836381~830310377989"
+   }
+  },
+  {
+   "adGroupResult": {
+    "resourceName": "customers/3569648608/adGroups/206875527812"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~353215052634"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~2057353441"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~302020147828"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~3835419322"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~362332891893"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~419438321456"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~337943509890"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~324634006703"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~433472805097"
+   }
+  },
+  {
+   "adGroupCriterionResult": {
+    "resourceName": "customers/3569648608/adGroupCriteria/206875527812~592316837893"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/206875527812~830310366154"
+   }
+  },
+  {
+   "adGroupAdResult": {
+    "resourceName": "customers/3569648608/adGroupAds/206875527812~830310366157"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435685549054"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576368246"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435762361725"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576367412"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576367418"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435762361728"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576368261"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435685549057"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435762328212"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576367439"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576368270"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435762361749"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576367454"
+   }
+  },
+  {
+   "assetResult": {
+    "resourceName": "customers/3569648608/assets/435576368279"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435685549054~SITELINK"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576368246~SITELINK"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435762361725~SITELINK"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576367412~SITELINK"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576367418~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435762361728~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576368261~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435685549057~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435762328212~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576367439~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576368270~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435762361749~CALLOUT"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576367454~STRUCTURED_SNIPPET"
+   }
+  },
+  {
+   "campaignAssetResult": {
+    "resourceName": "customers/3569648608/campaignAssets/24429434104~435576368279~CALL"
+   }
+  }
+ ]
+}

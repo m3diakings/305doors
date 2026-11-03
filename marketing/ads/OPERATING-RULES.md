@@ -71,6 +71,12 @@ cost per lead".
 
 ## 5. Weekly review routine
 
+The cloud routine "305 Doors Google Ads weekly review" runs these steps on
+Mondays at 10am Miami time for the previous Monday–Sunday. It starts with
+`python3 cloud/bootstrap.py ads`, writes its report to
+`marketing/runs/ads/<date>-report.md`, emails it to Osniel, and saves the
+report and `CHANGELOG.md` with `cloud/save_run.sh ads`.
+
 1. Confirm that tracking works (section 3).
 2. Pull spend, clicks, search terms, conversions and impression share for the
    week, and the outcomes of leads from ads.
@@ -107,8 +113,38 @@ cost per lead".
 
 - **Budget:** $1,000/month of Google Ads spend (about $32.90/day), starting
   2026-11-02.
+- **Rollout by county** (Osniel, 2026-11-02): ads start in **Miami-Dade and
+  Broward**. Palm Beach is added once those two have a known cost per
+  qualified lead; Lee and Monroe follow as small separate tests. Collier
+  stays out of ads (its site page stays up for organic search). Adding a
+  county is a location change and needs approval (section 4).
+- **Qualified lead** (Osniel, 2026-11-02): a homeowner, property manager or
+  business in a served county asking for a quote on a new door, a
+  replacement or a commercial installation. Repair requests count as
+  qualified but secondary. Not qualified: spam, vendors, job seekers,
+  parts-only or DIY questions, out-of-area requests.
+- **Lead record:** each quote form lands in the Supabase `leads` table with
+  its gclid/UTMs. The team sets `status` (new → qualified → quoted → won /
+  lost) and `job_value` weekly; these feed the weekly report and, later, the
+  offline conversion upload by gclid. Call leads are judged from Google's
+  call report until call tracking is added.
+- **Calls:** the call button shows Mon–Sat, 8am–6pm Miami time (the
+  account's Pacific-time schedule is set 3 hours earlier). Outside those
+  hours ads still run and lead to the quote form. The team answers calls in
+  Spanish.
+- **Language:** English and Spanish users are targeted, with English ads.
+  Spanish-language garage door searches in Miami-Dade and Broward total about
+  1,850 a month across 300 phrases, none above 70 (Keyword Planner,
+  2026-11-02), mostly price and style browsing, so there is no Spanish ad
+  group until search-term data shows demand worth one.
 
 **Still open:**
-1. What counts as a qualified lead, and where the team records it. Leads
-   arrive by email and in the Supabase `leads` table, which has no
-   qualified/won status or ad click ID yet.
+1. **How calls and leads are handled (noted by Osniel, 2026-11-02):** 305 Doors
+   may move to Jobber as its CRM, as SBC did. To decide: where form and call
+   leads live (Jobber, Supabase or both), how calls are tracked and logged
+   (today only Google's call report records them), and how the gclid travels
+   with each lead so qualified and won jobs can be sent back to Google Ads.
+   Until then, Supabase `leads` is the lead record.
+2. Who on the team updates lead `status` and `job_value`. (The columns
+   exist since 2026-11-02: `status` is one of new, qualified, unqualified,
+   quoted, won, lost, default new; `job_value` is numeric.)
