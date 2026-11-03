@@ -16,6 +16,8 @@ export const GA_MEASUREMENT_ID =
 export const GOOGLE_ADS_ID = 'AW-957785966'
 /** Google Ads conversion `send_to` for "Quote form submitted" (public). */
 export const GOOGLE_ADS_QUOTE_CONVERSION = `${GOOGLE_ADS_ID}/KWAbCLLb8LAdEO7O2sgD`
+/** Google Ads conversion `send_to` for "Phone link tapped (website)" (public). */
+export const GOOGLE_ADS_PHONE_CONVERSION = `${GOOGLE_ADS_ID}/A-LZCNeV-7AdEO7O2sgD`
 
 export const BUSINESS_NAME = '305 Doors Corp'
 export const BUSINESS_SHORT = '305 Doors'
