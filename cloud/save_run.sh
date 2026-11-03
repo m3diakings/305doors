@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# Commit and push this run's records (ledgers, manifests, briefs, reports) to main.
+# Commit and push this run's records (ledgers, manifests, briefs, reports, the ads change log) to main.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 git config user.name  >/dev/null || git config user.name  "305 Doors automation"
 git config user.email >/dev/null || git config user.email "automation@users.noreply.github.com"
-git add marketing/runs
+git add marketing/runs marketing/ads/CHANGELOG.md
 if git diff --cached --quiet; then echo "nothing to save"; exit 0; fi
 # safety: refuse to commit anything that looks like a credential file
 if git diff --cached --name-only | grep -Eq '(^|/)\.env$|client_secret|service-account'; then

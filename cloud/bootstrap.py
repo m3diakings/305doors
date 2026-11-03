@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Cloud-run setup for the 305 Doors marketing routines.
 
-Run from the repo root at the start of every cloud run:  python3 cloud/bootstrap.py blog|social
+Run from the repo root at the start of every cloud run:  python3 cloud/bootstrap.py blog|social|ads
 Checks that the environment's variables are present (never prints values) and installs the
 image tools the blog step needs. Exits 1 when a required variable is missing.
 """
@@ -13,13 +13,14 @@ REQUIRED = {
     "blog": ["OPENAI_API_KEY"],
     "social": ["META_PAGE_ID", "META_PAGE_ACCESS_TOKEN", "IG_USER_ID",
                "GBP_CLIENT_ID", "GBP_CLIENT_SECRET", "GBP_REFRESH_TOKEN", "GBP_ACCOUNT", "GBP_LOCATION"],
+    "ads": ["GCP_SERVICE_ACCOUNT_JSON", "SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"],
 }
 
 
 def main() -> int:
     job = sys.argv[1] if len(sys.argv) > 1 else ""
     if job not in REQUIRED:
-        print("usage: python3 cloud/bootstrap.py blog|social"); return 2
+        print("usage: python3 cloud/bootstrap.py blog|social|ads"); return 2
     missing = [v for v in REQUIRED[job] if not os.environ.get(v)]
     if job == "blog":
         try:
@@ -30,6 +31,11 @@ def main() -> int:
             subprocess.run("(apt-get update -qq && apt-get install -y -qq tesseract-ocr) >/dev/null 2>&1 || "
                            "(sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr) >/dev/null 2>&1", shell=True)
         print(f"tesseract: {'ok' if shutil.which('tesseract') else 'MISSING'}")
+    if job == "ads":
+        try:
+            import cryptography  # noqa: F401  (gapi.py signs the service-account token)
+        except ImportError:
+            subprocess.run([sys.executable, "-m", "pip", "install", "-q", "cryptography", "--break-system-packages"], check=False)
     print(f"{job} secrets present: {len(REQUIRED[job]) - len(missing)}  missing: {', '.join(missing) or 'none'}")
     return 1 if missing else 0
 
