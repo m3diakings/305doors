@@ -32,10 +32,17 @@ def main() -> int:
                            "(sudo apt-get update -qq && sudo apt-get install -y -qq tesseract-ocr) >/dev/null 2>&1", shell=True)
         print(f"tesseract: {'ok' if shutil.which('tesseract') else 'MISSING'}")
     if job == "ads":
-        try:
-            import cryptography  # noqa: F401  (gapi.py signs the service-account token)
-        except ImportError:
-            subprocess.run([sys.executable, "-m", "pip", "install", "-q", "cryptography", "--break-system-packages"], check=False)
+        # gapi.py signs the service-account token with these imports; test them in a fresh process,
+        # since a system cryptography can import but fail on its compiled backend (_cffi_backend).
+        check = [sys.executable, "-c", "from cryptography.hazmat.primitives import hashes, serialization; "
+                 "from cryptography.hazmat.primitives.asymmetric import padding"]
+        if subprocess.run(check, capture_output=True).returncode != 0:
+            subprocess.run([sys.executable, "-m", "pip", "install", "-q", "--ignore-installed", "cffi", "cryptography",
+                            "--break-system-packages"], check=False)
+        crypto_ok = subprocess.run(check, capture_output=True).returncode == 0
+        print(f"cryptography: {'ok' if crypto_ok else 'BROKEN'}")
+        if not crypto_ok:
+            missing.append("working cryptography")
     print(f"{job} secrets present: {len(REQUIRED[job]) - len(missing)}  missing: {', '.join(missing) or 'none'}")
     return 1 if missing else 0
 
