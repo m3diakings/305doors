@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-04",
+  "primary_keyword": "Miami-Dade NOA garage door",
+  "secondary_keywords": [
+    "Notice of Acceptance garage door",
+    "hurricane-rated garage door approval",
+    "garage door product approval Florida"
+  ],
+  "title": "Miami-Dade NOA Garage Door: How to Read the Approval",
+  "slug": "miami-dade-noa-garage-door",
+  "meta_title": "Miami-Dade NOA Garage Door: How to Read It",
+  "description": "What a Miami-Dade NOA garage door approval means, what's printed on it, where to find the label on your door, and what to ask before you buy.",
+  "content_file": "marketing/runs/blog/2026-11-04.md",
+  "image_file": "public/images/305doors/blog/miami-dade-noa-garage-door-featured.jpg",
+  "image_alt": "Technician in work gloves shining a flashlight at the lower corner and track of a white garage door in a Miami garage",
+  "image_prompt": "A technician in work gloves crouched inside a Miami garage, shining a flashlight at the lower corner of a smooth white sectional garage door where it meets the track, warm afternoon light, palm trees outside",
+  "differentiation": "Overlaps loosely with garage-door-hurricane-prep-checklist-miami (storm-prep inspection list; only briefly mentions product approval) and garage-door-home-insurance-florida (insurer angle). This post is about understanding and verifying the NOA product-approval document itself; neither covers it.",
+  "sources": [
+    "https://www.miamidade.gov/building/library/productcontrol/noa/23111401.pdf",
+    "https://www.floridabuilding.org/pr/pr_app_srch.aspx"
+  ],
+  "review": {
+    "approved": true,
+    "notes": "Independent reviewer: required small fixes (unsupported HVHZ county claim, attribution of label/job-site statements to the linked NOA, hedge 'usually'); all applied, label/expiry/job-site wording verified against the NOA PDF text. Links, banned claims, originality, voice, CTA passed."
+  }
+}
