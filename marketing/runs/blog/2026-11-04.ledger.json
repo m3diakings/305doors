@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/miami-dade-noa-garage-door/",
   "image": "/images/305doors/blog/miami-dade-noa-garage-door-featured.jpg",
   "image_alt": "Technician in work gloves shining a flashlight at the lower corner and track of a white garage door in a Miami garage",
-  "state": "committing",
-  "started_at": "2026-11-04T14:17:09.313796+00:00"
+  "state": "live",
+  "started_at": "2026-11-04T14:17:09.313796+00:00",
+  "commit": "b9a0401bc6273f1d7947bb3d13490f474aaee2ab",
+  "updated_at": "2026-11-04T14:18:13.650352+00:00",
+  "pushed_at": "2026-11-04T14:17:12.283103+00:00",
+  "live": true,
+  "verified_at": "2026-11-04T14:18:13.650315+00:00"
 }
