@@ -6,6 +6,11 @@
   "link": "https://305doors.com/blog/garage-door-rust-miami/",
   "image": "/images/305doors/blog/garage-door-rust-miami-featured.jpg",
   "image_alt": "Low-angle close-up of a rusty steel bottom bracket and track on a garage door in a Miami garage with a palm tree outside",
-  "state": "committing",
-  "started_at": "2026-11-06T14:20:04.517751+00:00"
+  "state": "live",
+  "started_at": "2026-11-06T14:20:04.517751+00:00",
+  "commit": "f9b51462c7a499811be6deb31c7b89889524cb1c",
+  "updated_at": "2026-11-06T14:21:08.082766+00:00",
+  "pushed_at": "2026-11-06T14:20:06.859083+00:00",
+  "live": true,
+  "verified_at": "2026-11-06T14:21:08.082743+00:00"
 }
